@@ -169,7 +169,7 @@ $(document).ready(function() {
         '07e1cd7d',
         'da4fb5c6',
         '4c56ff4c'];
-      var out = ['<img src="/puzzle_resources/anthropology/', IMG_CONSTANTS[number], '.png" height=80>']
+      var out = ['<img src="../puzzle_resources/anthropology/', IMG_CONSTANTS[number], '.png" height=80>']
       return out.join("");
   }
 
@@ -342,7 +342,7 @@ $(document).ready(function() {
   }
 
   function retrieve_lyra_clue(filename) {
-    var message = '<audio controls="controls" src="/puzzle_resources/anthropology/' + filename + '.mp3">This puzzle requires support of the audio HTML element.</audio>';
+    var message = '<audio controls="controls" src="../puzzle_resources/anthropology/' + filename + '.mp3">This puzzle requires support of the audio HTML element.</audio>';
     if (filename == '69adc1e1') {
         // Lena hall clue, make sure to request stage name.
         message += '<p>(stage name)</p>';
