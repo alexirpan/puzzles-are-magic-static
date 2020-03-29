@@ -1,0 +1,471 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="../../static/huntserver/favicon.ico" />
+    <title>Solution - Anthropology</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    
+<!-- do this before CSS! -->
+<link href="https://db.onlinewebfonts.com/c/7a254c051bfbb6a604d602768b0d1cec?family=WoodrowW00-Reg" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" type="text/css" href="../../static/huntserver/info_base.css">
+<link rel="stylesheet" type="text/css" href="../../static/huntserver/navbar.css">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-66803017-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-66803017-2');
+</script>
+
+    <script src="../../static/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    
+<meta name="robots" content="noindex">
+<script src="../../static/jquery.min.js"></script>
+<script src="../../static/huntserver/puzzle.js"></script>
+<script>
+    window.MathJax = { MathML: { extensions: ["mml3.js", "content-mathml.js"]}};
+    window.MathJax.Hub.Config({
+        "HTML-CSS": { linebreaks: { automatic: true, width: "100% container" }},
+        "SVG": { linebreaks: { automatic: true, width: "100% container" }}
+    });
+</script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=MML_HTMLorMML"></script>
+<link rel="stylesheet" type="text/css" href="../../static/huntserver/puzzle.css">
+
+     
+     
+    <link rel="stylesheet" type="text/css" href="../../static/huntserver/base.css">
+    <!-- Done for compatability with the fixed navbar, move into base.css eventually -->
+  </head>
+  <body>
+
+    <nav class="navbar navbar-default navbar-fixed-top"  >
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../../index.html">  My Little Pony: Puzzles are Magic </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            
+    <li class=' visible-sm visible-xs'><a href="../../index.html"> Homepage </a></li>
+    <li class=''><a href="../../hunt/info/index.html"> FAQ </a></li>
+    <li class=''><a href="../../hunt/rules/index.html"> Rules </a></li>
+    <li class=''><a href="../../hunt/current.html"> Puzzles </a></li>
+    <li class=''><a href="../../hunt/teams/index.html"> Teams </a></li>
+    <li class=''><a href="../../updates/index.html"> Updates </a></li>
+    <li class=''><a href="../../wrapup.html"> Wrap-Up </a></li>
+    <li class=''><a href="../../resources/index.html"> Resources </a></li>
+
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            
+              
+            
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    
+    
+<div class="container">
+  <div class="row puzzle content">
+    <div class="col-md-12 info">
+        <h1 class="story">Solution - Anthropology</h1>
+    </div>
+ </div>
+ <div class="col-md-10 col-md-offset-1">
+     <h4>
+         <em>
+         
+    By Alex Irpan
+
+         </em>
+     </h4>
+     <hr>
+     
+<div>
+    <p>
+    This puzzle starts with a 6-by-6 grid, labeled with emojis of different
+    hand signs. As mentioned in the given text, the first step is
+    figuring out how to parse the signals.
+    </p>
+
+    <p>
+    After some trial and error with the grid, solvers should discover
+    that the grid sums the signs that are turned on for each row and
+    column. The first time this sum does not match a larger hand sign
+    on the right or bottom, it colors the failed constraint red, and
+    returns an error message listing the incorrect sum. An example
+    image is shown below.
+    </p>
+
+    <p align="center">
+        <img style="max-width:100%;" src="../../puzzle_resources/anthropology/solution_grid_example.png.html">
+    </p>
+
+    <p>
+        Using this feedback, we can figure out what value each hand
+        sign goes to. There are many ways to do so. Here's one potential solve path.
+    </p>
+
+    <ol>
+        <li>
+    First, clicking Establish Connection when the grid is empty tells us
+    a constraint is broken with
+    <strong>SUM() = <img height="40" src="../../puzzle_resources/anthropology/f899139d.png.html">.</strong>
+    This tells us <img height="40" src="../../puzzle_resources/anthropology/f899139d.png.html"><strong> = 0.</strong>
+        </li>
+
+        <li>
+    With some experimenting, we find that
+    <strong>SUM(<img height="40" src="../../puzzle_resources/anthropology/c9e1074f.png.html">,
+        <img height="40" src="../../puzzle_resources/anthropology/ec895663.png.html">) =
+        <img height="40" src="../../puzzle_resources/anthropology/f0935e4c.png.html">,</strong> and
+    <strong>SUM(<img height="40" src="../../puzzle_resources/anthropology/65b9eea6.png.html">,
+        <img height="40" src="../../puzzle_resources/anthropology/38b3eff8.png.html">) =
+        <img height="40" src="../../puzzle_resources/anthropology/f0935e4c.png.html">.</strong>
+    At the start, we're told that 'Live long and prosper' (<img height="40" src="../../puzzle_resources/anthropology/f0935e4c.png.html">)
+    goes to 6 if it's light-skinned, and 17 if it isn't, so we know both these sums are
+    6.
+        </li>
+
+        <li>
+    After some more guesses, we find that
+    <strong>SUM(<img height="40" src="../../puzzle_resources/anthropology/c9e1074f.png.html">,
+        <img height="40" src="../../puzzle_resources/anthropology/ec895663.png.html">,
+        <img height="40" src="../../puzzle_resources/anthropology/65b9eea6.png.html">,
+        <img height="40" src="../../puzzle_resources/anthropology/f0935e4c.png.html">) =
+        <img height="40" src="../../puzzle_resources/anthropology/eb160de1.png.html">.</strong>
+    Substituting the known values, we get
+    <strong style="white-space:nowrap;">6 + <img height="40" src="../../puzzle_resources/anthropology/65b9eea6.png.html"> + 6 = 17,</strong>
+    so
+    <strong><img height="40" src="../../puzzle_resources/anthropology/65b9eea6.png.html"> = 5</strong> and
+    <strong><img height="40" src="../../puzzle_resources/anthropology/38b3eff8.png.html"> = 1.</strong>
+        </li>
+
+        <li>
+    Next, with some more guessing, we find that
+    <strong>SUM(<img height="40" src="../../puzzle_resources/anthropology/c9e1074f.png.html">,
+        <img height="40" src="../../puzzle_resources/anthropology/38b3eff8.png.html">) =
+        <img height="40" src="../../puzzle_resources/anthropology/65b9eea6.png.html">.</strong>
+    For this to work, we must have
+    <strong><img height="40" src="../../puzzle_resources/anthropology/c9e1074f.png.html"> = 4,</strong>
+    and with one of the earlier sums this gives
+    <strong><img height="40" src="../../puzzle_resources/anthropology/ec895663.png.html"> = 2.</strong>
+        </li>
+
+        <li>
+    Finally, we find that
+    <strong>SUM(<img height="40" src="../../puzzle_resources/anthropology/ec895663.png.html">,
+        <img height="40" src="../../puzzle_resources/anthropology/38b3eff8.png.html">) =
+        <img height="40" src="../../puzzle_resources/anthropology/6974ce5a.png.html">,</strong>
+    so <strong><img height="40" src="../../puzzle_resources/anthropology/6974ce5a.png.html"> = 3.</strong>
+    </li>
+        <li>
+    This gives all the numbers for rows and columns in the grid, and from here we
+    can pick squares to get every possible sum from 0 to 21, checking what
+    hand sign each maps to.
+        </li>
+    </ol>
+
+    <p>
+    To make data collection easier, every dark-skinned
+    hand sign is 11 more than the corresponding light-skinned hand sign.
+        Here is the full mapping between numbers and hand signs.
+    </p>
+
+    <center>
+        <table>
+        <tr>
+            <td><img height="40" src="../../puzzle_resources/anthropology/f899139d.png.html"></td><td><strong>0</strong></td>
+            <td><img style="padding-left:10px;" height="40" src="../../puzzle_resources/anthropology/38b3eff8.png.html"></td><td><strong>1</strong></td>
+            <td><img style="padding-left:10px;" height="40" src="../../puzzle_resources/anthropology/ec895663.png.html"></td><td><strong>2</strong></td>
+            <td><img style="padding-left:10px;" height="40" src="../../puzzle_resources/anthropology/6974ce5a.png.html"></td><td><strong>3</strong></td>
+            <td><img style="padding-left:10px;" height="40" src="../../puzzle_resources/anthropology/c9e1074f.png.html"></td><td><strong>4</strong></td>
+            <td><img style="padding-left:10px;" height="40" src="../../puzzle_resources/anthropology/65b9eea6.png.html"></td><td><strong>5</strong></td>
+            <td><img style="padding-left:10px;" height="40" src="../../puzzle_resources/anthropology/f0935e4c.png.html"></td><td><strong>6</strong></td>
+            <td><img style="padding-left:10px;" height="40" src="../../puzzle_resources/anthropology/a97da629.png.html"></td><td><strong>7</strong></td>
+            <td><img style="padding-left:10px;" height="40" src="../../puzzle_resources/anthropology/a3c65c29.png.html"></td><td><strong>8</strong></td>
+            <td><img style="padding-left:10px;" height="40" src="../../puzzle_resources/anthropology/2723d092.png.html"></td><td><strong>9</strong></td>
+            <td><img style="padding-left:10px;" height="40" src="../../puzzle_resources/anthropology/5f93f983.png.html"></td><td><strong>10</strong></td>
+        </tr><tr>
+            <td><img height="40" src="../../puzzle_resources/anthropology/698d51a1.png.html"></td><td><strong>11</strong></td>
+            <td><img style="padding-left:10px;" height="40" src="../../puzzle_resources/anthropology/7f6ffaa6.png.html"></td><td><strong>12</strong></td>
+            <td><img style="padding-left:10px;" height="40" src="../../puzzle_resources/anthropology/73278a4a.png.html"></td><td><strong>13</strong></td>
+            <td><img style="padding-left:10px;" height="40" src="../../puzzle_resources/anthropology/5fd0b37c.png.html"></td><td><strong>14</strong></td>
+            <td><img style="padding-left:10px;" height="40" src="../../puzzle_resources/anthropology/2b44928a.png.html"></td><td><strong>15</strong></td>
+            <td><img style="padding-left:10px;" height="40" src="../../puzzle_resources/anthropology/c45147de.png.html"></td><td><strong>16</strong></td>
+            <td><img style="padding-left:10px;" height="40" src="../../puzzle_resources/anthropology/eb160de1.png.html"></td><td><strong>17</strong></td>
+            <td><img style="padding-left:10px;" height="40" src="../../puzzle_resources/anthropology/5ef05993.png.html"></td><td><strong>18</strong></td>
+            <td><img style="padding-left:10px;" height="40" src="../../puzzle_resources/anthropology/07e1cd7d.png.html"></td><td><strong>19</strong></td>
+            <td><img style="padding-left:10px;" height="40" src="../../puzzle_resources/anthropology/da4fb5c6.png.html"></td><td><strong>20</strong></td>
+            <td><img style="padding-left:10px;" height="40" src="../../puzzle_resources/anthropology/4c56ff4c.png.html"></td><td><strong>21</strong></td>
+        </tr>
+        </table>
+    </center>
+
+    <p>
+        With all the hand signs known, we can translate the givens in the logic
+        puzzle into numbers and solve it.
+    </p>
+
+<table class="grid">
+    <tr>
+        <td class="bw"></td><td class="bw">4</td><td class="bw">5</td><td class="bw">2</td><td class="bw">1</td><td class="bw">6</td><td class="bw">3</td><td class="bw"></td>
+    </tr>
+    <tr>
+        <td class="bw">4</td><td class="w"></td><td class="w"></td><td class="w"></td><td class="w"></td><td class="w"></td><td class="w"></td><td class="bw">0</td>
+    </tr>
+    <tr>
+        <td class="bw">5</td><td class="w"></td><td class="w"></td><td class="w"></td><td class="w"></td><td class="w"></td><td class="w"></td><td class="bw">6</td>
+    </tr>
+    <tr>
+        <td class="bw">2</td><td class="w"></td><td class="w"></td><td class="w"></td><td class="w"></td><td class="w"></td><td class="w"></td><td class="bw">0</td>
+    </tr>
+    <tr>
+        <td class="bw">1</td><td class="w"></td><td class="w"></td><td class="w"></td><td class="w"></td><td class="w"></td><td class="w"></td><td class="bw">6</td>
+    </tr>
+    <tr>
+        <td class="bw">6</td><td class="w"></td><td class="w"></td><td class="w"></td><td class="w"></td><td class="w"></td><td class="w"></td><td class="bw">13</td>
+    </tr>
+    <tr>
+        <td class="bw">3</td><td class="w"></td><td class="w"></td><td class="w"></td><td class="w"></td><td class="w"></td><td class="w"></td><td class="bw">8</td>
+    </tr>
+    <tr>
+        <td class="bw"></td><td class="bw">0</td><td class="bw">9</td><td class="bw">9</td><td class="bw">3</td><td class="bw">12</td><td class="bw">0</td><td class="bw"></td>
+    </tr>
+</table><table class="grid">
+    <tr>
+        <td class="bw"></td><td class="bw">4</td><td class="bw">5</td><td class="bw">2</td><td class="bw">1</td><td class="bw">6</td><td class="bw">3</td><td class="bw"></td>
+    </tr>
+    <tr>
+        <td class="bw">4</td><td class="w"></td><td class="w"></td><td class="w"></td><td class="w"></td><td class="w"></td><td class="w"></td><td class="bw">0</td>
+    </tr>
+    <tr>
+        <td class="bw">5</td><td class="w"></td><td class="w"></td><td class="w"></td><td class="w"></td><td class="b"></td><td class="w"></td><td class="bw">6</td>
+    </tr>
+    <tr>
+        <td class="bw">2</td><td class="w"></td><td class="w"></td><td class="w"></td><td class="w"></td><td class="w"></td><td class="w"></td><td class="bw">0</td>
+    </tr>
+    <tr>
+        <td class="bw">1</td><td class="w"></td><td class="w"></td><td class="w"></td><td class="w"></td><td class="b"></td><td class="w"></td><td class="bw">6</td>
+    </tr>
+    <tr>
+        <td class="bw">6</td><td class="w"></td><td class="b"></td><td class="b"></td><td class="w"></td><td class="b"></td><td class="w"></td><td class="bw">13</td>
+    </tr>
+    <tr>
+        <td class="bw">3</td><td class="w"></td><td class="b"></td><td class="b"></td><td class="b"></td><td class="w"></td><td class="w"></td><td class="bw">8</td>
+    </tr>
+    <tr>
+        <td class="bw"></td><td class="bw">0</td><td class="bw">9</td><td class="bw">9</td><td class="bw">3</td><td class="bw">12</td><td class="bw">0</td><td class="bw"></td>
+    </tr>
+</table>
+
+Entering this solution replaces each of the black squares with a hand sign, as
+well as a new message.
+
+<p align="center">
+    <img style="max-width:100%;" src="../../puzzle_resources/anthropology/solution_solved_grid.png.html">
+</p>
+
+<p>
+Clicking each hand sign gives an audio clip of someone speaking or singing.
+The hand signs correspond to the number 1 to 8, providing an ordering.
+</p>
+
+<p>
+Some of the clips talk about specific My Little Pony characters, or refer to
+the series in general. This, along with Rarity's comment, hint that every
+speaker is the voice actor of a My Little Pony character. (After all,
+everypony knows humans don't exist.)
+</p>
+
+<p>
+The top of the grid is labeled "First", and the left side of the grid is
+labeled "Last". This indicates the final step: index the hand sign for "First"
+into the first name, and index the hand sign for "Last" into the last name
+of the character they voice.
+</p>
+
+<table class="table table-condensed">
+    <thead>
+        <tr>
+            <th>Hand Sign</th>
+            <th>Clip Source</th>
+            <th>Speaker</th>
+            <th>MLP Character</th>
+            <th>Index Pair</th>
+            <th>Letters</th></tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><img  height="40" src="../../puzzle_resources/anthropology/38b3eff8.png.html"></td>
+            <td><a href="https://www.youtube.com/watch?v=ZWmu1b-WpzM&t=323s">MLP Movie Cast Interview (starting from 5:23)</a></td>
+            <td>Zoe Saldana</td>
+            <td>Captain Celaeno</td>
+            <td>5, 6</td>
+            <td>AN</td>
+        </tr>
+        <tr>
+            <td><img  height="40" src="../../puzzle_resources/anthropology/ec895663.png.html"></td>
+            <td><a href="https://www.youtube.com/watch?v=ZWmu1b-WpzM&t=770s">MLP Movie Cast Interview (starting from 12:50)</a></td>
+            <td>Emily Blunt</td>
+            <td>Tempest Shadow (her villain name)</td>
+            <td>6, 6</td>
+            <td>SW</td>
+        </tr>
+        <tr>
+            <td><img  height="40" src="../../puzzle_resources/anthropology/6974ce5a.png.html"></td>
+            <td><a href="https://www.youtube.com/watch?v=XsUGxcvn8yw">My Eyes, Female Singer</a></td>
+            <td>Felicia Day</td>
+            <td>Pear Butter</td>
+            <td>2, 6</td>
+            <td>ER</td>
+        </tr>
+        <tr>
+            <td><img  height="40" src="../../puzzle_resources/anthropology/c9e1074f.png.html"></td>
+            <td><a href="https://www.youtube.com/watch?v=2vjPBrBU-TM">Chandelier</a></td>
+            <td>Sia Furler</td>
+            <td>Songbird Serenade</td>
+            <td>6, 1</td>
+            <td>IS</td>
+        </tr>
+        <tr>
+            <td><img  height="40" src="../../puzzle_resources/anthropology/65b9eea6.png.html"></td>
+            <td><a href="https://www.youtube.com/watch?v=ajsNJtnUb7c">KHAAAAAN!!!</a></td>
+            <td>William Shatner</td>
+            <td>Grand Pear</td>
+            <td>1, 3</td>
+            <td>GA</td>
+        </tr>
+        <tr>
+            <td><img  height="40" src="../../puzzle_resources/anthropology/f0935e4c.png.html"></td>
+            <td><a href="https://www.youtube.com/watch?v=Hr6IjOzFJbQ">Patton Oswalt Explains "My Little Pony" on CONAN</a></td>
+            <td>Patton Oswalt</td>
+            <td>Quibble Pants</td>
+            <td>2, 3</td>
+            <td>UN</td>
+        </tr>
+        <tr>
+            <td><img  height="40" src="../../puzzle_resources/anthropology/a97da629.png.html"></td>
+            <td><a href="https://www.youtube.com/watch?v=R1Mh2FQxwsM">Lena Hall's 2014 Tony Award Acceptance Speech</a></td>
+            <td>Lena Hall</td>
+            <td>Countess Coloratura (her stage name)</td>
+            <td>5, 3</td>
+            <td>TL</td>
+        </tr>
+        <tr>
+            <td><img  height="40" src="../../puzzle_resources/anthropology/a3c65c29.png.html"></td>
+            <td><a href="https://www.youtube.com/watch?v=ZWmu1b-WpzM&t=1472s">MLP Movie Cast Interview (starting at 24:30)</a></td>
+            <td>Kristen Chenoweth</td>
+            <td>Princess Skystar</td>
+            <td>6, 5</td>
+            <td>ET</td>
+        </tr>
+    </tbody>
+</table>
+
+<p>
+Together, the letters say "ANSWER IS <strong>GAUNTLET</strong>".
+</p>
+
+</div>
+
+ </div>
+  <div class="row puzzle content">
+    <div class='col-md-12 info'>
+        <h1 class="story">Authors Notes</h1>
+    </div>
+ </div>
+ <div class="col-md-10 col-md-offset-1">
+     
+<p>
+I strongly felt that the hunt needed a Lyra puzzle, due to her
+popularity among background ponies.
+The fanon that Lyra is obsessed with humans made
+MLP voice actors a natural connection. It was also a good
+way to add <em>My Little Pony: The Movie</em>
+representation to the hunt, since the movie had several celebrity voice actors.
+</p>
+
+<p>I quickly made up the story of Lyra trying to tune a device
+to receive transmissions from an alternate dimension, along with
+a cluephrase and extraction I was happy with...which left the
+problem of providing the two indices in a way that made it a puzzle.
+After a few failed ideas, I landed on cluing what squares were activated in
+a 2D grid. The <a href="https://www.puzzle-kakurasu.com/">Kakurasu</a>
+logic puzzle was flexible enough to support this, but the logic puzzle was
+very easy to solve, so I added the final layer of hand signs and
+interactivity.
+Kakurasu
+is a lesser-known logic puzzle with very simple rules, so by embedding it
+inside an interactive element with appropriate feedback, I could avoid
+explaining the rules, while adding more roadblocks between solvers and
+the solution.
+</p>
+
+<p>
+I wasn't that satisfied with the design of this puzzle, since the logic puzzle
+was so disconnected from the audio clips you get afterwards. However, early
+feedback suggests people
+liked the cipher logic puzzle a lot more than I expected. Turns
+out solvers like interactive puzzles - who knew? The puzzle's design is still
+disconnected, the interactivity didn't make that go away, but I'm glad the
+puzzle went over well. As for the audio clips, I was worried some would be
+too hard to search, but testsolvers were able to find all of them, except
+for <a href="https://www.youtube.com/watch?v=lul-Y8vSr0I">Shatner's cover
+of Rocket Man</a>. It's a shame I had to change that clip, because it's
+such a great cover.
+</p>
+
+<p>Rather amusingly, in the days before Hunt, one of the TSBI teams signed up
+as "Tempest Shadow (Berrytwist, Initially)". That reminded me I needed to
+clarify that solvers should use Tempest Shadow, instead of her birth name
+of Fizzlepop Berrytwist.
+Thanks for accidentally making
+hunt a little less ambiguous!</p>
+
+<p>The MLP Movie is a mixed bag - fun if you're a fan, just okay if you aren't.
+On the other hand, the MLP episodes with guest voice actors are often really
+good. In particular,
+"The Perfect Pear" (starring
+Felicia Day and William Shatner) and "The Mane Attraction" (starring Lena
+Hall) are both 10/10 episodes and are worth checking out if you're
+a fan who's fallen behind on the show, or are new to MLP and want to see what
+the fuss is about.</p>
+
+<p>
+(Incidentally, the 4 > 5 > 2 > 1 > 6 > 3 order used isn't random. It's
+my ranking
+for the first six seasons of My Little Pony: Friendship of Magic. You're free
+to disagree, of course.)
+</p>
+
+
+ </div>
+</div>
+
+
+    
+    
+    
+  </body>
+</html>

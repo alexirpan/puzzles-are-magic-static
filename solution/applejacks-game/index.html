@@ -1,0 +1,400 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="../../static/huntserver/favicon.ico" />
+    <title>Solution - Applejack&#39;s Game</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    
+<!-- do this before CSS! -->
+<link href="https://db.onlinewebfonts.com/c/7a254c051bfbb6a604d602768b0d1cec?family=WoodrowW00-Reg" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" type="text/css" href="../../static/huntserver/info_base.css">
+<link rel="stylesheet" type="text/css" href="../../static/huntserver/navbar.css">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-66803017-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-66803017-2');
+</script>
+
+    <script src="../../static/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    
+<meta name="robots" content="noindex">
+<script src="../../static/jquery.min.js"></script>
+<script src="../../static/huntserver/puzzle.js"></script>
+<script>
+    window.MathJax = { MathML: { extensions: ["mml3.js", "content-mathml.js"]}};
+    window.MathJax.Hub.Config({
+        "HTML-CSS": { linebreaks: { automatic: true, width: "100% container" }},
+        "SVG": { linebreaks: { automatic: true, width: "100% container" }}
+    });
+</script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=MML_HTMLorMML"></script>
+<link rel="stylesheet" type="text/css" href="../../static/huntserver/puzzle.css">
+
+     
+     
+    <link rel="stylesheet" type="text/css" href="../../static/huntserver/base.css">
+    <!-- Done for compatability with the fixed navbar, move into base.css eventually -->
+  </head>
+  <body>
+
+    <nav class="navbar navbar-default navbar-fixed-top"  >
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../../index.html">  My Little Pony: Puzzles are Magic </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            
+    <li class=' visible-sm visible-xs'><a href="../../index.html"> Homepage </a></li>
+    <li class=''><a href="../../hunt/info/index.html"> FAQ </a></li>
+    <li class=''><a href="../../hunt/rules/index.html"> Rules </a></li>
+    <li class=''><a href="../../hunt/current.html"> Puzzles </a></li>
+    <li class=''><a href="../../hunt/teams/index.html"> Teams </a></li>
+    <li class=''><a href="../../updates/index.html"> Updates </a></li>
+    <li class=''><a href="../../wrapup.html"> Wrap-Up </a></li>
+    <li class=''><a href="../../resources/index.html"> Resources </a></li>
+
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            
+              
+            
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    
+    
+<div class="container">
+  <div class="row puzzle content">
+    <div class="col-md-12 info">
+        <h1 class="story">Solution - Applejack&#39;s Game</h1>
+    </div>
+ </div>
+ <div class="col-md-10 col-md-offset-1">
+     <h4>
+         <em>
+         
+    By Alex Irpan and Nishant Pappireddi
+
+         </em>
+     </h4>
+     <hr>
+     
+<div>
+    <p>This puzzle is inspired by the board game <em>Apples to Apples</em>, or at
+    least its fictional pony equivalent of <em>Applejacks to Applejacks</em>
+    that we made up for this puzzle.
+    When <span class="monospace">finalexam</span> is entered as a command, you're told that there are
+    five missing cards, and you need to enter which card each pony would pick.
+    This splits the puzzle into two parts:
+    finding the rule each pony uses to pick their favorite card, and determining
+    the missing cards. These parts can be solved
+    independently.</p>
+
+    <h2>Part 1: Pony Rules</h2>
+
+    <p>In each round of <em>Applejacks to Applejacks</em>, each pony mentions her
+    favorite card of that round, including any cards that were tied for her
+    favorite. Additionally, the judge of each round is asked to briefly
+    explain why she picked the card she did. The winning pony is randomly
+    picked from all ponies that haven't won yet, guaranteeing that solvers
+    see each pony's explanation once after 6 rounds of play.</p>
+
+    <p>Below are the explanations each pony gives, and the corresponding rule,
+    which can be verified by generating a few rounds and verifying they're
+    consistent with the data received.</p>
+
+    <table class="table table-condensed">
+        <thead>
+            <tr><th>Pony</th><th>Explanation</th><th>Rule</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>Applejack</td>
+                <td>"It really took the lead."</td>
+                <td>Card that comes first alphabetically.</td>
+            </tr>
+            <tr><td>Twilight Sparkle</td>
+                <td>"It reminded me of reading a nice, long book."</td>
+                <td>Card with the longest name.</td>
+            </tr>
+            <tr><td>Rainbow Dash</td>
+                <td>"It was the most colorful."</td>
+                <td>Card with the most unique letters from ROYGBIV. Multiple instances of the same letter only count once.</td>
+            </tr>
+            <tr><td>Fluttershy</td>
+                <td>"It reminded me of the tea parties I like to have at home."
+                <td>Card with the most Ts.</td>
+            </tr>
+            <tr><td>Rarity</td>
+                <td>"It was rarer than the other ones."</td>
+                <td>Card with the rarest letter, as defined by US Scrabble value.</td>
+            </tr>
+            <tr><td>Pinkie Pie</td>
+                <td>"It reminded me of queueing, and voodoo, and sequoias and iguanas!"</td>
+                <td>Card with the highest fraction of vowels (letters in AEIOU).</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>Each pony's rule is either thematic to their name, or is well satisfied by their own name out of the Mane 6, but noticing this isn't needed to solve the puzzle.</p>
+
+    <h2>Part 2: Finding the Missing Cards</h2>
+
+    <p>There are a limited number of red cards and green cards, and you're told
+    when Applejack needs to shuffle each deck. Some notetaking will show that
+    there are 35 red cards and 5 green cards.</p>
+
+    <table class="table table-condensed">
+        <thead>
+        <tr>
+            <th colspan=5>Red Cards</th>
+        </tr>
+        </thead>
+<tr>
+  <td>AINO</td>
+  <td>AKAISHI</td>
+  <td>BLOOMBERG</td>
+  <td>BLUES</td>
+  <td>BUSKING</td>
+</tr>
+<tr>
+  <td>CAMBRIDGE</td>
+  <td>CHIEF THUNDERHOOVES</td>
+  <td>CLASSICAL</td>
+  <td>COUNTRY</td>
+  <td>DUBIOUS LUXURY</td>
+</tr>
+<tr>
+  <td>EMOTIVA</td>
+  <td>FETTER KEYS</td>
+  <td>HOTAKADAKE</td>
+  <td>KITA</td>
+  <td>LITTLE STRONGHEART</td>
+</tr>
+<tr>
+  <td>MARANTZ</td>
+  <td>METAL</td>
+  <td>NAIM</td>
+  <td>ONKYO</td>
+  <td>ONTAKE</td>
+</tr>
+<tr>
+  <td>PEACHTREE</td>
+  <td>POLKA</td>
+  <td>REGA</td>
+  <td>REGGAE</td>
+  <td>ROCKITY ROLL</td>
+</tr>
+<tr>
+  <td>SHERIFF SILVERSTAR</td>
+  <td>SKITTISH</td>
+  <td>STAR SPUR</td>
+  <td>TECHNO</td>
+  <td>THE GAMBLER</td>
+</tr>
+<tr>
+  <td>THE QUESTION JAR SHOW</td>
+  <td>TROUBLE SHOES</td>
+  <td>WARUSAWA</td>
+  <td>WATER AND WASHINGTON</td>
+  <td>YARI</td>
+</tr>
+    </table>
+
+<table class="table table-condensed">
+    <thead>
+        <tr>
+            <th colspan=5><strong>Green Cards</strong></th>
+        </tr>
+    </thead>
+<tr>
+  <td>?????????? ??????</td>
+  <td>????? ?????????????</td>
+  <td>???????? ?????????</td>
+  <td>???? ??????? ??????</td>
+  <td>????? ??????</td>
+</tr>
+    </table>
+
+    <p>The 35 red cards can be grouped into 5 groups of seven, with the group name
+    matching the enumeration of one of the green cards.</p>
+
+<table class="table table-condensed">
+<thead><tr><th colspan=5>Appleloosa Ponies</th></tr></thead>
+<tr>
+    <td>BLOOMBERG</td>
+<td>CHIEF THUNDERHOOVES</td>
+<td>FETTER KEYS</td>
+<td>LITTLE STRONGHEART</td>
+<td>SHERIFF SILVERSTAR</td>
+<td>STAR SPUR</td>
+<td>TROUBLE SHOES</td>
+</tr></td>
+</table>
+<table class="table table-condensed">
+<thead><tr><th colspan=5>Audio Manufacturers</th></tr></thead>
+<tr>
+    <td>CAMBRIDGE</td>
+<td>EMOTIVA</td>
+<td>MARANTZ</td>
+<td>NAIM</td>
+<td>ONKYO</td>
+<td>PEACHTREE</td>
+<td>REGA</td>
+</tr>
+</table>
+<table class="table table-condensed">
+<thead><tr><th colspan=5>Japanese Mountains</th></tr></thead>
+<tr>
+    <td>AINO</td>
+<td>AKAISHI</td>
+<td>HOTAKADAKE</td>
+<td>KITA</td>
+<td>ONTAKE</td>
+<td>WARUSAWA</td>
+<td>YARI</td>
+</tr>
+</table>
+<table class="table table-condensed">
+<thead><tr><th colspan=5>Mike Doughty Albums</th></tr></thead>
+<tr>
+    <td>BUSKING</td>
+<td>DUBIOUS LUXURY</td>
+<td>ROCKITY ROLL</td>
+<td>SKITTISH</td>
+<td>THE GAMBLER</td>
+<td>THE QUESTION JAR SHOW</td>
+<td>WATER AND WASHINGTON</td>
+</tr>
+</table>
+<table class="table table-condensed">
+<thead><tr><th colspan=5>Music Genres</th></tr></thead>
+<tr>
+    <td>BLUES</td>
+<td>CLASSICAL</td>
+<td>COUNTRY</td>
+<td>METAL</td>
+<td>POLKA</td>
+<td>REGGAE</td>
+<td>TECHNO</td>
+</tr>
+</table>
+
+<p>(Appleloosa Ponies isn't 100% accurate, since the set includes some buffalo, and Bloomberg the apple tree. However, we felt that PONIES was the collective noun solvers would think of first, and a slightly-incorrect noun was better than a rarer 100%-correct one.)</p>
+
+    <p>For each group, there is a notable apple cultivar that also appears in that
+    group. There are hundreds of these cultivars, but the ones used are well known
+    and all appear on <a href="https://bestapples.com/varieties-information/varieties/">bestapples.com</a>'s list of apple varieties. They used to also all appear on the
+    <a href="https://www.usapple.org/apple-varieties">US Apple Association</a>
+    website, but they updated their website between puzzle construction and
+    the public run of the hunt.
+    In testsolving, common break-ins were realizing FUJI was both an apple
+    and a Japanese mountain, or looking up a list of Mike Doughty's albums and noticing one
+    was titled GOLDEN DELICIOUS.</p>
+
+    <table class="table table-condensed">
+        <thead>
+            <tr><th>Group</th>
+                <th>Apple</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Appleloosa Ponies</td><td>BRAEBURN</td></tr>
+            <tr><td>Audio Manufacturers</td><td>MCINTOSH</td></tr>
+            <tr><td>Japanese Mountains</td><td>FUJI</td></tr>
+            <tr><td>Mike Doughty Albums</td><td>GOLDEN DELICIOUS</td></tr>
+            <tr><td>Music Genres</td><td>JAZZ</td></tr>
+        </tbody>
+    </table>
+
+    <p>For Appleloosa Ponies in particular, several ponies from the Apple
+    family are named after apple cultivars, but only Braeburn lives in
+    Appleloosa.</p>
+
+    <h2>Solving the Puzzle</h2>
+
+    <p>Applying the discovered rules to the five apple cultivars gives
+    <span class="monospace">BRAEBURN, GOLDEN DELICIOUS, GOLDEN DELICIOUS, MCINTOSH, JAZZ, FUJI</span>. Entering this for <span class="monospace">finalexam</span> gives one final message.</p>
+
+<div class="row">
+<p class="col-md-8 col-md-offset-2 monospace">Correct!</p>
+</div>
+
+<div class="row">
+<p class="col-md-8 col-md-offset-2 monospace">
+    In another flash of light, one final card appears.
+    <br>
+    It reads "The ANSWER you seek lies at the LONG BRANCH SALOON."
+</p>
+</div>
+
+    <p>The answer is <strong>LONG BRANCH SALOON</strong>.</p>
+</div>
+
+ </div>
+  <div class="row puzzle content">
+    <div class='col-md-12 info'>
+        <h1 class="story">Authors Notes</h1>
+    </div>
+ </div>
+ <div class="col-md-10 col-md-offset-1">
+     
+<p>This puzzle started with Nishant noticing we could
+make an <em>Apples to Apples</em> puzzle.
+In the first draft, solvers needed to transform a list of words
+such that they fit <em>Apples to Apples</em> categories,
+with extraction coming from the transformation.</p>
+
+<p>This didn't capture the spirit of <em>Apples to Apples</em> as
+much as it could have, so we revised it to the current interactive
+version where each judge had different preferences.
+Initialy, there was no "missing card" step, and finding each
+rule solved the puzzle, but testsolvers rightfully pointed out that
+all the red cards were unused information.
+They proposed the missing card step, but we were stuck on a satisfying
+choice for the missing cards.
+Eventually, we realized it
+would be very fitting if the missing cards were apples, leading to the final version.
+Small tweaks were made to ensure each apple was somepony's favorite, there
+were no ties, and each pony's rule was thematic to their name or would
+select their name.</p>
+
+<p>For music genres, we caught the Polka apple in testsolving, but during the
+hunt a few solvers found the Flamenco apple. That was a bit unfortunate, but
+Jazz was the more common apple cultivar, and it looks like solvers
+powered through the ambiguity.</p>
+
+<p>Overall, I'm pretty happy with where this puzzle ended up.
+The lesson here is that the best way to write an apple-themed puzzle is
+to continually ask "What if we add EVEN MORE APPLES?"</p>
+
+ </div>
+</div>
+
+
+    
+    
+    
+  </body>
+</html>

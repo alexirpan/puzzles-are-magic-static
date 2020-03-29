@@ -1,0 +1,283 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="../../static/huntserver/favicon.ico" />
+    <title>Solution - Art of the Dress</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    
+<!-- do this before CSS! -->
+<link href="https://db.onlinewebfonts.com/c/7a254c051bfbb6a604d602768b0d1cec?family=WoodrowW00-Reg" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" type="text/css" href="../../static/huntserver/info_base.css">
+<link rel="stylesheet" type="text/css" href="../../static/huntserver/navbar.css">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-66803017-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-66803017-2');
+</script>
+
+    <script src="../../static/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    
+<meta name="robots" content="noindex">
+<script src="../../static/jquery.min.js"></script>
+<script src="../../static/huntserver/puzzle.js"></script>
+<script>
+    window.MathJax = { MathML: { extensions: ["mml3.js", "content-mathml.js"]}};
+    window.MathJax.Hub.Config({
+        "HTML-CSS": { linebreaks: { automatic: true, width: "100% container" }},
+        "SVG": { linebreaks: { automatic: true, width: "100% container" }}
+    });
+</script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=MML_HTMLorMML"></script>
+<link rel="stylesheet" type="text/css" href="../../static/huntserver/puzzle.css">
+
+     
+     
+    <link rel="stylesheet" type="text/css" href="../../static/huntserver/base.css">
+    <!-- Done for compatability with the fixed navbar, move into base.css eventually -->
+  </head>
+  <body>
+
+    <nav class="navbar navbar-default navbar-fixed-top"  >
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../../index.html">  My Little Pony: Puzzles are Magic </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            
+    <li class=' visible-sm visible-xs'><a href="../../index.html"> Homepage </a></li>
+    <li class=''><a href="../../hunt/info/index.html"> FAQ </a></li>
+    <li class=''><a href="../../hunt/rules/index.html"> Rules </a></li>
+    <li class=''><a href="../../hunt/current.html"> Puzzles </a></li>
+    <li class=''><a href="../../hunt/teams/index.html"> Teams </a></li>
+    <li class=''><a href="../../updates/index.html"> Updates </a></li>
+    <li class=''><a href="../../wrapup.html"> Wrap-Up </a></li>
+    <li class=''><a href="../../resources/index.html"> Resources </a></li>
+
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            
+              
+            
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    
+    
+<div class="container">
+  <div class="row puzzle content">
+    <div class="col-md-12 info">
+        <h1 class="story">Solution - Art of the Dress</h1>
+    </div>
+ </div>
+ <div class="col-md-10 col-md-offset-1">
+     <h4>
+         <em>
+         
+    By Alex Irpan
+
+         </em>
+     </h4>
+     <hr>
+     
+<div>
+    <p>
+        <em>"It's white and gold!"</em>
+    </p>
+
+    <p>
+        <em>"It's blue and black!"</em>
+    </p>
+
+    <p>This puzzle shares its name with the My Little Pony song "Art of the Dress", but
+    it's not about that song. Instead, it's literally art of <a href="https://en.wikipedia.org/wiki/The_dress">The Dress</a>.</p>
+
+    <p>Every 10 seconds, the colors in the dress shift from white-and-gold stripes
+    to blue-and-black stripes. The bottom of the dress stand has Morse code,
+    which decodes to PANTONE.</p>
+
+    <p>This indicates we should lookup the Pantone color name for each color.
+    The color names are all from Pantone's cotton section, as hinted in the
+    flavortext.
+    Extracting the exact colors of the white-and-gold version and the blue-and-black
+    version, and looking up the Pantone color name for each, we see that the
+    non-color portion of each name has the same length, and they overlap at exactly
+    one letter.</p>
+
+    <table class="table table-condensed monospace">
+        <thead>
+            <tr>
+                <th>Hex Color Codes</th>
+                <th>Color Names</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>#BD9865<br>#6C5765</td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong class="monospace">P</strong>ALE Gold<br>Black <strong class="monospace">P</strong>LUM</td>
+            </tr>
+            <tr>
+                <td>#EDF1FE<br>#95C0CB</td>
+                <td>BRILLI<strong class="monospace">A</strong>NT White<br>PORCEL<strong class="monospace">A</strong>IN Blue</td>
+            </tr>
+        <tr>
+            <td>#C77943<br>#4D4B50</td>
+            <td>&nbsp;&nbsp;&nbsp;Golden OCH<strong class="monospace">R</strong>E<br>Blackened PEA<strong class="monospace">R</strong>L</td>
+        </tr>
+    <tr>
+    <td>#F5ECD2
+        <br>#E1E3DE</td>
+    <td>WIN<strong class="monospace">T</strong>ER White<br>
+        MYS<strong class="monospace">T</strong>IC Blue</td>
+    </tr>
+    <tr>
+    <td>#BB7A2C
+        <br>#2B3042 </td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong class="monospace">I</strong>NCA Gold<br>
+        Black <strong class="monospace">I</strong>RIS </td>
+    </tr>
+    <tr>
+    <td>#EDE6DB
+        <br>#0F4C81</td>
+    <td>WHI<strong class="monospace">S</strong>PER White<br>
+        CLA<strong class="monospace">S</strong>SIC Blue</td>
+    </tr>
+    <tr>
+    <td>#D7942D
+        <br>#26262A</td>
+    <td>Golden OR<strong class="monospace">A</strong>NGE<br>
+        &nbsp;Black BE<strong class="monospace">A</strong>UTY</td>
+    </tr>
+    <tr>
+    <td>#E4D7C5
+        <br>#3686A0</td>
+    <td>White SWA<strong class="monospace">N</strong><br>
+        &nbsp;Blue MOO<strong class="monospace">N</strong></td>
+    </tr>
+        </tbody>
+    </table>
+
+    <p>Reading down the dress from top to bottom gives PARTISAN.
+    Submitting this tells your team to send an email to <tt>puzzlesaremagic+thedress@gmail.com</tt>,
+    where the subject is either "White and Gold" or "Blue and Black". Sending
+    either subject gave solvers this reply.</p>
+
+<div class="row">
+<p class="col-md-8 col-md-offset-2" style="font-family:monospace;">
+    Thanks for voting!
+</p>
+<p class="col-md-8 col-md-offset-2" style="font-family:monospace;">
+    This dress would go great with some GREEN BOOTS. You should submit that!
+</p>
+</div>
+
+    <p>The answer is one last colorful fashion piece, <strong>GREEN BOOTS</strong>.</p>
+
+</div>
+
+ </div>
+  <div class="row puzzle content">
+    <div class='col-md-12 info'>
+        <h1 class="story">Authors Notes</h1>
+    </div>
+ </div>
+ <div class="col-md-10 col-md-offset-1">
+     
+    <p>First, the important part. The votes are in, and 253 votes later, we
+    can finally settle what color The Dress is.</p>
+
+    <p align="center">
+        <img style="width:100%;" src="../../puzzle_resources/art-of-the-dress/votes.png.html">
+    </p>
+
+    <p>For the record, I picked an extraction that avoided making a
+    value judgment on the color of the dress, but I'm <em>firmly</em> in the
+    White and Gold camp. These results disgust me.</p>
+
+    <p>On to the puzzle! I had a very hard time coming up with a Rarity puzzle. I did a lot of
+    research on gemstones, hairstyles, and details of dress making, but wasn't
+    able to find a puzzle idea I was happy with.</p>
+
+    <p>While watching <a href="https://www.youtube.com/watch?v=L2s1I_U8xSw">Art of the Dress</a>
+    for the 14th time to see if there were any
+    interesting visuals or lyrics I could pull from the song, I idly thought that
+    one famous dress was The Dress, and wouldn't it be funny if the puzzle was
+    literally artwork of The Dress?
+    The rest of the puzzle came together almost immediately.
+    I tried to avoid using Pantone colors, but Web colors didn't have
+    enough shades of white, gold, blue, and black to work with.</p>
+
+    <p>As you may have noticed during hunt, getting exact hex colors from an
+    animation to solvers is harder than you'd think! The first testsolve used
+    GIF, but GIF does lossy compression if you use more than 256 different colors
+    across the entire animation, so that didn't work.
+    After some searching, WebP seemed like the best
+    supported image format that supported both animations and lossless
+    compression.</p>
+
+    <p>That worked fine the next 2 testsolves, until a team decided to take
+    a screenshot of the animation instead of using a GIF exploder like
+    <a href="https://ezgif.com/">ezGIF</a> (which, despite its name, supports WebP
+    images). After a long Q&amp;A session,
+    we figured out that on some machines, but not all, screenshots would slightly
+    change the pixel values, and unfortunately, some Pantone colors only differ
+    by 1 in a single RGB channel, so the exact pixel values were important.
+    Out of exasperation I gave them the
+    intended images directly...and they still got the wrong data.</p>
+
+    <p>After <em>another</em> Q&amp;A session, I found out they were using
+    <a href="https://imagecolorpicker.com/">imagecolorpicker.com</a>, one of
+    the first search results for getting colors out of an image.
+    In its backend, the site converts all uploaded images to JPEG,
+    even if they were initially in a lossless format like PNG, so the
+    colors that come back to you don't match the original ones.</p>
+
+    <p>At this point, perhaps the puzzle should have been cut...but every testsolver
+    who didn't hit these color issues thought the puzzle was really cute, and
+    I was a big fan of the "email to vote" interaction.
+    I settled for adding as much warning as I could, without ruining the parts
+    of the puzzle I found elegant.</p>
+
+    <p>Given a do-over, I would have provided both the animation, and smaller
+    download links for the two dresses. Extracting the correct color
+    values was not supposed to be the hard part of the puzzle.</p>
+
+    <p>It also didn't help that Pantone's hex-to-color tool sometimes
+    recommends a color that doesn't match the color exactly, over a color
+    that <em>does</em> match exactly. The correct color is always in the list
+    of options, but I have no idea how you could even code an error like that...</p>
+
+    <p>In short, we're sorry if you got hit by any of these issues. The lesson
+    here is that exact colors are horribly complicated, and elegant ideas
+    don't always lead to elegant results.</p>
+
+ </div>
+</div>
+
+
+    
+    
+    
+  </body>
+</html>

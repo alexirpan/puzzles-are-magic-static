@@ -1,0 +1,162 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="../static/huntserver/favicon.ico" />
+    <title>Applejack&#39;s Game</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    
+<!-- do this before CSS! -->
+<link href="https://db.onlinewebfonts.com/c/7a254c051bfbb6a604d602768b0d1cec?family=WoodrowW00-Reg" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" type="text/css" href="../static/huntserver/info_base.css">
+<link rel="stylesheet" type="text/css" href="../static/huntserver/navbar.css">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-66803017-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-66803017-2');
+</script>
+
+    <script src="../static/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    
+<script src="../static/jquery.min.js"></script>
+
+    <!-- add stuff that makes static answer checker work. -->
+    <script type="text/javascript">
+        puzzle_id = 'applejacks-game';
+    </script>
+    <script src="../static/huntserver/static_checker.js"></script>
+
+<script>
+    window.MathJax = { MathML: { extensions: ["mml3.js", "content-mathml.js"]}};
+    window.MathJax.Hub.Config({
+        "HTML-CSS": { linebreaks: { automatic: true, width: "100% container" }},
+        "SVG": { linebreaks: { automatic: true, width: "100% container" }}
+    });
+</script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=MML_HTMLorMML"></script>
+<link rel="stylesheet" type="text/css" href="../static/huntserver/puzzle.css">
+
+    
+<script type="text/javascript" src="../static/huntserver/static_applejack_chat.js"></script>
+<link rel="stylesheet" type="text/css" href="../static/huntserver/chat.css">
+
+     
+    <link rel="stylesheet" type="text/css" href="../static/huntserver/base.css">
+    <!-- Done for compatability with the fixed navbar, move into base.css eventually -->
+  </head>
+  <body>
+
+    <nav class="navbar navbar-default navbar-fixed-top"  >
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html">  My Little Pony: Puzzles are Magic </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            
+    <li class=' visible-sm visible-xs'><a href="../index.html"> Homepage </a></li>
+    <li class=''><a href="../hunt/info/index.html"> FAQ </a></li>
+    <li class=''><a href="../hunt/rules/index.html"> Rules </a></li>
+    <li class=''><a href="../hunt/current.html"> Puzzles </a></li>
+    <li class=''><a href="../hunt/teams/index.html"> Teams </a></li>
+    <li class=''><a href="../updates/index.html"> Updates </a></li>
+    <li class=''><a href="../wrapup.html"> Wrap-Up </a></li>
+    <li class=''><a href="../resources/index.html"> Resources </a></li>
+
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            
+              
+            
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    
+    
+<div class="container">
+  <div class="row puzzle content">
+    <div class='col-md-12 info'>
+      <div class='leftinfo centered'>
+        <h1 class="story">Applejack&#39;s Game</h1>
+      </div>
+      
+    </div>
+    
+          <h3 class="centered">
+              <a href="../solution/applejacks-game/index.html">View Solution</a>
+          </h3>
+          <div class="centered">
+              <input id="answerinput" type="text">
+              <button id="answercheckbutton">Check Answer</button>
+              <br>
+              <span id="answerrepeat"></span><span id="answerreply"></span>
+          </div>
+          <h4 class="centered">
+              <a href="../stats/applejacks-game.html">View Stats</a>
+          </h4>
+    
+
+    <div class="col-md-10 col-md-offset-1">
+        
+<div>
+<p>The Mane 6 take a look around. "Isn't there supposed to be a puzzle here?"</p>
+  <p>Applejack looks around. "Well, I don't see one. Maybe it'll show up if we wait a bit. Hey, why don't we play a game to pass the time?"</p>
+  <p>"Really, Applejack?"</p>
+  <p>"I promise it'll be quick," Applejack says, as she starts shuffling two decks of red and green cards. "Hang on, are we missing a few cards?"</p>
+</div>
+
+<div class="col-md-12 container">
+  <div class="row">
+    <div class="col-md-12 content">
+      <h1> Applejack's Game </h1>
+      <div id="chatcontainer">
+          "The rules are simple," Applejack says. "We each take turn judging cards. I deal out a green card, and everypony else submits a red card. I pick the winner, and the winner becomes the new judge for next round."
+          <br>
+          <br>
+          To see a list of commands, enter "help".
+      </div>
+      <div style="margin-top: 10px">
+        <input id="messagebox" type='text'>
+        <button id="sendbutton">Send</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+        
+            <div>
+                <h2 class="story">Hints</h2>
+                <p class="centered">
+                    Hints are available <a href="../hints/applejacks-game.html">here</a>.
+                </p>
+            </div>
+        
+    </div>
+  </div>
+</div>
+
+    
+    
+    
+  </body>
+</html>

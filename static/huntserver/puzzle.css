@@ -1,0 +1,62 @@
+/* Styling for puzzle text */
+@import url("https://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700,400italic");
+
+hr {
+    border-top: 2px solid black;
+}
+
+.flavor {
+    font-style: italic;
+    text-align: center;
+}
+
+.centered {
+    text-align: center;
+}
+
+.grid {
+    margin-bottom: 10px;
+}
+
+.puzzlegrid {
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table.puzzlegrid td { width: 24px; height: 24px; font-family: Roboto, monospace; text-align: center; font-size: 18px; }
+table.puzzlegrid td.gray { background: #999; }
+
+table.smallgrid td { width: 24px; height: 24px; text-align: center; font-size: 18px; }
+table.smallgrid td.gray { background: #999; }
+table.smallgrid td.green { border: 1px solid black; background: #0f0; }
+table.smallgrid td.w { border: 1px solid black; background: #fff; }
+table.smallgrid td.b { border: 1px solid black; background: #000; }
+table.smallgrid td.y { border: 1px solid black; background: #ff0; }
+table.smallgrid td.wdiagup { border: 1px solid black; background: linear-gradient(to right bottom, #ffffff 0%,#ffffff 49.4%,#000000 49.5%,#000000 51.5%,#ffffff 51.6%,#ffffff 100%); }
+table.smallgrid td.wdiagdown { border: 1px solid black; background: linear-gradient(to right top, #ffffff 0%,#ffffff 49.4%,#000000 49.5%,#000000 51.5%,#ffffff 51.6%,#ffffff 100%); }
+table.smallgrid td.bw { }  /* borderless white */
+
+
+table.grid td { width: 36px; height: 36px; text-align: center; font-size: 24px; }
+/* .puzzle-content table td:last-child { border-right: 1px solid #999; } */
+table.grid td.gray { background: #999; }
+table.grid td.green { border: 1px solid black; background: #0f0; }
+table.grid td.w { border: 1px solid black; background: #fff; }
+table.grid td.b { border: 1px solid black; background: #000; }
+table.grid td.y { border: 1px solid black; background: #ff0; }
+table.grid td.wdiagup { border: 1px solid black; background: linear-gradient(to right bottom, #ffffff 0%,#ffffff 49.4%,#000000 49.5%,#000000 51.5%,#ffffff 51.6%,#ffffff 100%); }
+table.grid td.wdiagdown { border: 1px solid black; background: linear-gradient(to right top, #ffffff 0%,#ffffff 49.4%,#000000 49.5%,#000000 51.5%,#ffffff 51.6%,#ffffff 100%); }
+table.grid td.bw { }  /* borderless white */
+
+/* bad style but whatever... */
+table.biggrid td { width: 100px; height: 100px; text-align: center; font-size: 66px; }
+table.biggrid td.gray { background: #999; }
+table.biggrid td.green { border: 1px solid black; background: #0f0; }
+table.biggrid td.w { border: 1px solid black; background: #fff; }
+table.biggrid td.b { border: 1px solid black; background: #000; }
+table.biggrid td.y { border: 1px solid black; background: #ff0; }
+table.biggrid td.wdiagup { border: 1px solid black; background: linear-gradient(to right bottom, #ffffff 0%,#ffffff 49.4%,#000000 49.5%,#000000 51.5%,#ffffff 51.6%,#ffffff 100%); }
+table.biggrid td.wdiagdown { border: 1px solid black; background: linear-gradient(to right top, #ffffff 0%,#ffffff 49.4%,#000000 49.5%,#000000 51.5%,#ffffff 51.6%,#ffffff 100%); }
+table.biggrid td.bw { }  /* borderless white */

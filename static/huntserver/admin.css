@@ -1,0 +1,129 @@
+/* 
+  This file is for huntserver specific page styling.
+  Contents do not get applied to included django admin pages 
+*/
+
+/* Global */
+
+button {
+    background-color: white;
+    border: 1px solid black;
+    margin: 1px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    white-space: nowrap;
+    display: inline-block;}
+
+
+table.team-list {
+  width:400px;
+}
+
+table.table-bordered {
+    border:1px solid black;
+    margin-top:20px;
+}
+table.table-bordered > thead > tr > th {
+    border:1px solid black;
+}
+table.table-bordered > tbody > tr > td {
+    border:1px solid black;
+}
+table.table-bordered > thead > tr > td {
+    border:1px solid black;
+}
+
+/* Queue */
+#queue {
+  width: 100%; }
+
+  #queue tbody .success td {
+    background-color: #c8ffb0; }
+
+  #queue tbody .warning td {
+    background-color: #f4f5b6; }
+
+  #queue tbody .danger td {
+    background-color: #ffc5c5; }
+
+
+/* Progress */
+.actions {
+  text-align: center;
+}
+
+table.table.table-condensed > thead > tr > td {
+    vertical-align: middle;
+}
+table.table.table-condensed > tbody > tr > td {
+    vertical-align: middle;
+}
+
+#progress {
+  font-size: 80%; }
+
+  #progress .solved {
+    background: hsla(128, 100%, 75%, 1);; }
+
+  #progress .available {
+      background: hsla(55, 100%, 75%, 1); }
+
+  #progress th {
+    text-align: center;
+  }
+
+  #progress.table-condensed>thead>tr>td {
+    padding: 3px;
+  }
+
+.sort_select {
+  display: inline;
+  width: 160px;
+  margin-bottom: 10px;
+  -webkit-appearance: menulist;
+}
+
+.sort_label {
+  margin-left: 30px;
+}
+
+select {
+  -webkit-appearance: menulist;
+}
+
+/* Management */
+.list-group.list-group-root {
+    padding: 0;
+    overflow: hidden;
+}
+
+.list-group.list-group-root .list-group {
+    margin-bottom: 0;
+}
+
+.list-group.list-group-root .list-group-item {
+    border-radius: 0;
+    border-width: 1px 0 0 0;
+}
+
+.list-group.list-group-root > .list-group-item:first-child {
+    border-top-width: 0;
+}
+
+.list-group.list-group-root > .list-group > .list-group-item {
+    padding-left: 45px;
+}
+
+.list-group-item .glyphicon {
+    margin-right: 5px;
+}
+
+.list-group-item button .glyphicon {
+    margin-right: 0px;
+}
+
+.download-btn {
+  padding: 3px 12px 1px 12px;
+  margin-top: -2px;
+}

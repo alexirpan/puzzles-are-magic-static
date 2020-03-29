@@ -1,0 +1,960 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="../../static/huntserver/favicon.ico" />
+    <title>Solution - Cross Eyed</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    
+<!-- do this before CSS! -->
+<link href="https://db.onlinewebfonts.com/c/7a254c051bfbb6a604d602768b0d1cec?family=WoodrowW00-Reg" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" type="text/css" href="../../static/huntserver/info_base.css">
+<link rel="stylesheet" type="text/css" href="../../static/huntserver/navbar.css">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-66803017-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-66803017-2');
+</script>
+
+    <script src="../../static/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    
+<meta name="robots" content="noindex">
+<script src="../../static/jquery.min.js"></script>
+<script src="../../static/huntserver/puzzle.js"></script>
+<script>
+    window.MathJax = { MathML: { extensions: ["mml3.js", "content-mathml.js"]}};
+    window.MathJax.Hub.Config({
+        "HTML-CSS": { linebreaks: { automatic: true, width: "100% container" }},
+        "SVG": { linebreaks: { automatic: true, width: "100% container" }}
+    });
+</script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=MML_HTMLorMML"></script>
+<link rel="stylesheet" type="text/css" href="../../static/huntserver/puzzle.css">
+
+     
+    
+<style type="text/css">
+div.bk {position:absolute;font-size:0px;border-left:black 0px solid;border-right:black 0px solid;border-top:black 36px solid;border-bottom:black 0px solid;width:36px;height:36px;}
+div.hb {position:absolute;font-size:0px;border-left:black 0px solid;border-right:black 0px solid;border-top:black 5px solid;border-bottom:black 0px solid;width:37px;}
+div.hb0 {position:absolute;font-size:0px;border-left:black 0px solid;border-right:black 0px solid;border-top:black 5px solid;border-bottom:black 0px solid;width:39px;}
+div.vb {position:absolute;font-size:0px;border-left:black 5px solid;border-right:black 0px solid;border-top:black 0px solid;border-bottom:black 0px solid;height:37px;}
+div.vb0 {position:absolute;font-size:0px;border-left:black 5px solid;border-right:black 0px solid;border-top:black 0px solid;border-bottom:black 0px solid;height:39px;}
+div.hr {position:absolute;font-size:0px;border-left:black 0px solid;border-right:black 0px solid;border-top:black 1px solid;border-bottom:black 0px solid;}
+div.hr {position:absolute;font-size:0px;border-left:black 0px solid;border-right:black 0px solid;border-top:black 1px solid;border-bottom:black 0px solid;}
+div.vr {position:absolute;font-size:0px;border-left:black 1px solid;border-right:black 0px solid;border-top:black 0px solid;border-bottom:black 0px solid;}
+div.nu {position:absolute;font-size:12px;font-family:sans-serif;width:32px;height:32px}
+div.lt {position:absolute;text-align:center;width:36px;font-family:sans-serif}
+</style>
+
+    <link rel="stylesheet" type="text/css" href="../../static/huntserver/base.css">
+    <!-- Done for compatability with the fixed navbar, move into base.css eventually -->
+  </head>
+  <body>
+
+    <nav class="navbar navbar-default navbar-fixed-top"  >
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../../index.html">  My Little Pony: Puzzles are Magic </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            
+    <li class=' visible-sm visible-xs'><a href="../../index.html"> Homepage </a></li>
+    <li class=''><a href="../../hunt/info/index.html"> FAQ </a></li>
+    <li class=''><a href="../../hunt/rules/index.html"> Rules </a></li>
+    <li class=''><a href="../../hunt/current.html"> Puzzles </a></li>
+    <li class=''><a href="../../hunt/teams/index.html"> Teams </a></li>
+    <li class=''><a href="../../updates/index.html"> Updates </a></li>
+    <li class=''><a href="../../wrapup.html"> Wrap-Up </a></li>
+    <li class=''><a href="../../resources/index.html"> Resources </a></li>
+
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            
+              
+            
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    
+    
+<div class="container">
+  <div class="row puzzle content">
+    <div class="col-md-12 info">
+        <h1 class="story">Solution - Cross Eyed</h1>
+    </div>
+ </div>
+ <div class="col-md-10 col-md-offset-1">
+     <h4>
+         <em>
+         
+    By Alex Irpan, Anderson Wang, and Nishant Pappireddi
+
+         </em>
+     </h4>
+     <hr>
+     
+<div>
+    <p>This is a standard crossword, except in every clue, the letters within each
+    word are scrambled. The first and last letter of each word are unchanged,
+    based on the
+    classic myth that you can jumble the middle letters
+    of a word without hurting readability. As
+    you may have discovered, this myth is only partly true. Longer words with
+    uncommon letter patterns take more effort to read.</p>
+
+    <p>The crossword fill works the same way. Each word must be entered such that
+    the first and last letter are in their original spots, but the middle letters
+    may appear in any order.</p>
+
+<center>
+<div style="border-width:0px;width:541px;height:541px;position:relative;">
+<div style="border-width:0px;top:0px;left:0px;width:541px;height:541px;position:absolute;">
+<div class="bk" style="left:1px;top:1px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:37px;top:1px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:73px;top:1px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:109px;top:1px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:145px;top:1px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:181px;top:1px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:217px;top:1px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:253px;top:1px;"></div>
+<div class="bk" style="left:289px;top:1px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:325px;top:1px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:361px;top:1px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:397px;top:1px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:433px;top:1px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:469px;top:1px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:505px;top:1px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:1px;top:37px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:37px;top:37px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:73px;top:37px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:109px;top:37px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:145px;top:37px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:181px;top:37px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:217px;top:37px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:253px;top:37px;"></div>
+<div class="bk" style="left:289px;top:37px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:325px;top:37px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:361px;top:37px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:397px;top:37px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:433px;top:37px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:469px;top:37px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:505px;top:37px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:1px;top:73px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:37px;top:73px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:73px;top:73px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:109px;top:73px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:145px;top:73px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:181px;top:73px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:217px;top:73px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:253px;top:73px;"></div>
+<div class="bk" style="left:289px;top:73px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:325px;top:73px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:361px;top:73px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:397px;top:73px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:433px;top:73px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:469px;top:73px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:505px;top:73px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:1px;top:109px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:37px;top:109px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:73px;top:109px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:109px;top:109px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:145px;top:109px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:181px;top:109px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:217px;top:109px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:253px;top:109px;"></div>
+<div class="bk" style="left:289px;top:109px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:325px;top:109px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:361px;top:109px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:397px;top:109px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:433px;top:109px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:469px;top:109px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:505px;top:109px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:1px;top:145px;"></div>
+<div class="bk" style="left:37px;top:145px;"></div>
+<div class="bk" style="left:73px;top:145px;"></div>
+<div class="bk" style="left:109px;top:145px;"></div>
+<div class="bk" style="left:145px;top:145px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:181px;top:145px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:217px;top:145px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:253px;top:145px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:289px;top:145px;"></div>
+<div class="bk" style="left:325px;top:145px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:361px;top:145px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:397px;top:145px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:433px;top:145px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:469px;top:145px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:505px;top:145px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:1px;top:181px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:37px;top:181px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:73px;top:181px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:109px;top:181px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:145px;top:181px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:181px;top:181px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:217px;top:181px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:253px;top:181px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:289px;top:181px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:325px;top:181px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:361px;top:181px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:397px;top:181px;"></div>
+<div class="bk" style="left:433px;top:181px;"></div>
+<div class="bk" style="left:469px;top:181px;"></div>
+<div class="bk" style="left:505px;top:181px;"></div>
+<div class="bk" style="left:1px;top:217px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:37px;top:217px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:73px;top:217px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:109px;top:217px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:145px;top:217px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:181px;top:217px;"></div>
+<div class="bk" style="left:217px;top:217px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:253px;top:217px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:289px;top:217px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:325px;top:217px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:361px;top:217px;"></div>
+<div class="bk" style="left:397px;top:217px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:433px;top:217px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:469px;top:217px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:505px;top:217px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:1px;top:253px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:37px;top:253px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:73px;top:253px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:109px;top:253px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:145px;top:253px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:181px;top:253px;"></div>
+<div class="bk" style="left:217px;top:253px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:253px;top:253px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:289px;top:253px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:325px;top:253px;"></div>
+<div class="bk" style="left:361px;top:253px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:397px;top:253px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:433px;top:253px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:469px;top:253px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:505px;top:253px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:1px;top:289px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:37px;top:289px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:73px;top:289px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:109px;top:289px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:145px;top:289px;"></div>
+<div class="bk" style="left:181px;top:289px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:217px;top:289px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:253px;top:289px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:289px;top:289px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:325px;top:289px;"></div>
+<div class="bk" style="left:361px;top:289px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:397px;top:289px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:433px;top:289px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:469px;top:289px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:505px;top:289px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:1px;top:325px;"></div>
+<div class="bk" style="left:37px;top:325px;"></div>
+<div class="bk" style="left:73px;top:325px;"></div>
+<div class="bk" style="left:109px;top:325px;"></div>
+<div class="bk" style="left:145px;top:325px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:181px;top:325px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:217px;top:325px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:253px;top:325px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:289px;top:325px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:325px;top:325px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:361px;top:325px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:397px;top:325px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:433px;top:325px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:469px;top:325px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:505px;top:325px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:1px;top:361px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:37px;top:361px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:73px;top:361px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:109px;top:361px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:145px;top:361px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:181px;top:361px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:217px;top:361px;"></div>
+<div class="bk" style="left:253px;top:361px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:289px;top:361px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:325px;top:361px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:361px;top:361px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:397px;top:361px;"></div>
+<div class="bk" style="left:433px;top:361px;"></div>
+<div class="bk" style="left:469px;top:361px;"></div>
+<div class="bk" style="left:505px;top:361px;"></div>
+<div class="bk" style="left:1px;top:397px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:37px;top:397px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:73px;top:397px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:109px;top:397px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:145px;top:397px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:181px;top:397px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:217px;top:397px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:253px;top:397px;"></div>
+<div class="bk" style="left:289px;top:397px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:325px;top:397px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:361px;top:397px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:397px;top:397px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:433px;top:397px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:469px;top:397px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:505px;top:397px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:1px;top:433px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:37px;top:433px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:73px;top:433px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:109px;top:433px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:145px;top:433px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:181px;top:433px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:217px;top:433px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:253px;top:433px;"></div>
+<div class="bk" style="left:289px;top:433px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:325px;top:433px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:361px;top:433px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:397px;top:433px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:433px;top:433px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:469px;top:433px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:505px;top:433px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:1px;top:469px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:37px;top:469px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:73px;top:469px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:109px;top:469px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:145px;top:469px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:181px;top:469px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:217px;top:469px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:253px;top:469px;"></div>
+<div class="bk" style="left:289px;top:469px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:325px;top:469px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:361px;top:469px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:397px;top:469px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:433px;top:469px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:469px;top:469px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:505px;top:469px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:1px;top:505px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:37px;top:505px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:73px;top:505px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:109px;top:505px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:145px;top:505px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:181px;top:505px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:217px;top:505px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:253px;top:505px;"></div>
+<div class="bk" style="left:289px;top:505px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:325px;top:505px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:361px;top:505px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:397px;top:505px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:433px;top:505px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:469px;top:505px;border-top:#FFFFFF 36px solid;"></div>
+<div class="bk" style="left:505px;top:505px;border-top:#FFFFFF 36px solid;"></div>
+<div class="nu" style="left:4px;top:1px;color:000000;text-align:left">1</div>
+<div class="nu" style="left:40px;top:1px;color:000000;text-align:left">2</div>
+<div class="nu" style="left:76px;top:1px;color:000000;text-align:left">3</div>
+<div class="nu" style="left:112px;top:1px;color:000000;text-align:left">4</div>
+<div class="nu" style="left:148px;top:1px;color:000000;text-align:left">5</div>
+<div class="nu" style="left:184px;top:1px;color:000000;text-align:left">6</div>
+<div class="nu" style="left:220px;top:1px;color:000000;text-align:left">7</div>
+<div class="nu" style="left:292px;top:1px;color:000000;text-align:left">8</div>
+<div class="nu" style="left:328px;top:1px;color:000000;text-align:left">9</div>
+<div class="nu" style="left:364px;top:1px;color:000000;text-align:left">10</div>
+<div class="nu" style="left:400px;top:1px;color:000000;text-align:left">11</div>
+<div class="nu" style="left:436px;top:1px;color:000000;text-align:left">12</div>
+<div class="nu" style="left:472px;top:1px;color:000000;text-align:left">13</div>
+<div class="nu" style="left:508px;top:1px;color:000000;text-align:left">14</div>
+<div class="nu" style="left:4px;top:37px;color:000000;text-align:left">15</div>
+<div class="nu" style="left:292px;top:37px;color:000000;text-align:left">16</div>
+<div class="nu" style="left:4px;top:73px;color:000000;text-align:left">17</div>
+<div class="nu" style="left:292px;top:73px;color:000000;text-align:left">18</div>
+<div class="nu" style="left:4px;top:109px;color:000000;text-align:left">19</div>
+<div class="nu" style="left:292px;top:109px;color:000000;text-align:left">20</div>
+<div class="nu" style="left:148px;top:145px;color:000000;text-align:left">21</div>
+<div class="nu" style="left:256px;top:145px;color:000000;text-align:left">22</div>
+<div class="nu" style="left:328px;top:145px;color:000000;text-align:left">23</div>
+<div class="nu" style="left:4px;top:181px;color:000000;text-align:left">24</div>
+<div class="nu" style="left:40px;top:181px;color:000000;text-align:left">25</div>
+<div class="nu" style="left:76px;top:181px;color:000000;text-align:left">26</div>
+<div class="nu" style="left:112px;top:181px;color:000000;text-align:left">27</div>
+<div class="nu" style="left:292px;top:181px;color:000000;text-align:left">28</div>
+<div class="nu" style="left:4px;top:217px;color:000000;text-align:left">29</div>
+<div class="nu" style="left:220px;top:217px;color:000000;text-align:left">30</div>
+<div class="nu" style="left:400px;top:217px;color:000000;text-align:left">31</div>
+<div class="nu" style="left:436px;top:217px;color:000000;text-align:left">32</div>
+<div class="nu" style="left:472px;top:217px;color:000000;text-align:left">33</div>
+<div class="nu" style="left:508px;top:217px;color:000000;text-align:left">34</div>
+<div class="nu" style="left:4px;top:253px;color:000000;text-align:left">35</div>
+<div class="nu" style="left:220px;top:253px;color:000000;text-align:left">36</div>
+<div class="nu" style="left:364px;top:253px;color:000000;text-align:left">37</div>
+<div class="nu" style="left:4px;top:289px;color:000000;text-align:left">38</div>
+<div class="nu" style="left:184px;top:289px;color:000000;text-align:left">39</div>
+<div class="nu" style="left:364px;top:289px;color:000000;text-align:left">40</div>
+<div class="nu" style="left:148px;top:325px;color:000000;text-align:left">41</div>
+<div class="nu" style="left:328px;top:325px;color:000000;text-align:left">42</div>
+<div class="nu" style="left:4px;top:361px;color:000000;text-align:left">43</div>
+<div class="nu" style="left:40px;top:361px;color:000000;text-align:left">44</div>
+<div class="nu" style="left:76px;top:361px;color:000000;text-align:left">45</div>
+<div class="nu" style="left:112px;top:361px;color:000000;text-align:left">46</div>
+<div class="nu" style="left:256px;top:361px;color:000000;text-align:left">47</div>
+<div class="nu" style="left:4px;top:397px;color:000000;text-align:left">48</div>
+<div class="nu" style="left:220px;top:397px;color:000000;text-align:left">49</div>
+<div class="nu" style="left:292px;top:397px;color:000000;text-align:left">50</div>
+<div class="nu" style="left:400px;top:397px;color:000000;text-align:left">51</div>
+<div class="nu" style="left:436px;top:397px;color:000000;text-align:left">52</div>
+<div class="nu" style="left:472px;top:397px;color:000000;text-align:left">53</div>
+<div class="nu" style="left:508px;top:397px;color:000000;text-align:left">54</div>
+<div class="nu" style="left:4px;top:433px;color:000000;text-align:left">55</div>
+<div class="nu" style="left:292px;top:433px;color:000000;text-align:left">56</div>
+<div class="nu" style="left:4px;top:469px;color:000000;text-align:left">57</div>
+<div class="nu" style="left:292px;top:469px;color:000000;text-align:left">58</div>
+<div class="nu" style="left:4px;top:505px;color:000000;text-align:left">59</div>
+<div class="nu" style="left:292px;top:505px;color:000000;text-align:left">60</div>
+<div class="lt" style="left:1px;top:7px;color:000000;font-size:22px;">G</div>
+<div class="lt" style="left:37px;top:7px;color:000000;font-size:22px;">L</div>
+<div class="lt" style="left:73px;top:7px;color:000000;font-size:22px;">G</div>
+<div class="lt" style="left:109px;top:7px;color:000000;font-size:22px;">O</div>
+<div class="lt" style="left:145px;top:7px;color:000000;font-size:22px;">S</div>
+<div class="lt" style="left:181px;top:7px;color:000000;font-size:22px;">A</div>
+<div class="lt" style="left:217px;top:7px;color:000000;font-size:22px;">W</div>
+<div class="lt" style="left:253px;top:7px;color:000000;font-size:22px;"> </div>
+<div class="lt" style="left:289px;top:7px;color:000000;font-size:22px;">P</div>
+<div class="lt" style="left:325px;top:7px;color:000000;font-size:22px;">A</div>
+<div class="lt" style="left:361px;top:7px;color:000000;font-size:22px;">G</div>
+<div class="lt" style="left:397px;top:7px;color:000000;font-size:22px;">S</div>
+<div class="lt" style="left:433px;top:7px;color:000000;font-size:22px;">E</div>
+<div class="lt" style="left:469px;top:7px;color:000000;font-size:22px;">U</div>
+<div class="lt" style="left:505px;top:7px;color:000000;font-size:22px;">S</div>
+<div class="lt" style="left:1px;top:43px;color:000000;font-size:22px;">I</div>
+<div class="lt" style="left:37px;top:43px;color:000000;font-size:22px;">A</div>
+<div class="lt" style="left:73px;top:43px;color:000000;font-size:22px;">T</div>
+<div class="lt" style="left:109px;top:43px;color:000000;font-size:22px;">E</div>
+<div class="lt" style="left:145px;top:43px;color:000000;font-size:22px;">N</div>
+<div class="lt" style="left:181px;top:43px;color:000000;font-size:22px;">S</div>
+<div class="lt" style="left:217px;top:43px;color:000000;font-size:22px;">D</div>
+<div class="lt" style="left:253px;top:43px;color:000000;font-size:22px;"> </div>
+<div class="lt" style="left:289px;top:43px;color:000000;font-size:22px;">A</div>
+<div class="lt" style="left:325px;top:43px;color:000000;font-size:22px;">N</div>
+<div class="lt" style="left:361px;top:43px;color:000000;font-size:22px;">O</div>
+<div class="lt" style="left:397px;top:43px;color:000000;font-size:22px;">I</div>
+<div class="lt" style="left:433px;top:43px;color:000000;font-size:22px;">T</div>
+<div class="lt" style="left:469px;top:43px;color:000000;font-size:22px;">N</div>
+<div class="lt" style="left:505px;top:43px;color:000000;font-size:22px;">O</div>
+<div class="lt" style="left:1px;top:79px;color:000000;font-size:22px;">R</div>
+<div class="lt" style="left:37px;top:79px;color:000000;font-size:22px;">E</div>
+<div class="lt" style="left:73px;top:79px;color:000000;font-size:22px;">O</div>
+<div class="lt" style="left:109px;top:79px;color:000000;font-size:22px;">V</div>
+<div class="lt" style="left:145px;top:79px;color:000000;font-size:22px;">A</div>
+<div class="lt" style="left:181px;top:79px;color:000000;font-size:22px;">M</div>
+<div class="lt" style="left:217px;top:79px;color:000000;font-size:22px;">L</div>
+<div class="lt" style="left:253px;top:79px;color:000000;font-size:22px;"> </div>
+<div class="lt" style="left:289px;top:79px;color:000000;font-size:22px;">C</div>
+<div class="lt" style="left:325px;top:79px;color:000000;font-size:22px;">E</div>
+<div class="lt" style="left:361px;top:79px;color:000000;font-size:22px;">R</div>
+<div class="lt" style="left:397px;top:79px;color:000000;font-size:22px;">L</div>
+<div class="lt" style="left:433px;top:79px;color:000000;font-size:22px;">N</div>
+<div class="lt" style="left:469px;top:79px;color:000000;font-size:22px;">O</div>
+<div class="lt" style="left:505px;top:79px;color:000000;font-size:22px;">L</div>
+<div class="lt" style="left:1px;top:115px;color:000000;font-size:22px;">P</div>
+<div class="lt" style="left:37px;top:115px;color:000000;font-size:22px;">D</div>
+<div class="lt" style="left:73px;top:115px;color:000000;font-size:22px;">O</div>
+<div class="lt" style="left:109px;top:115px;color:000000;font-size:22px;">R</div>
+<div class="lt" style="left:145px;top:115px;color:000000;font-size:22px;">C</div>
+<div class="lt" style="left:181px;top:115px;color:000000;font-size:22px;">U</div>
+<div class="lt" style="left:217px;top:115px;color:000000;font-size:22px;">E</div>
+<div class="lt" style="left:253px;top:115px;color:000000;font-size:22px;"> </div>
+<div class="lt" style="left:289px;top:115px;color:000000;font-size:22px;">E</div>
+<div class="lt" style="left:325px;top:115px;color:000000;font-size:22px;">X</div>
+<div class="lt" style="left:361px;top:115px;color:000000;font-size:22px;">P</div>
+<div class="lt" style="left:397px;top:115px;color:000000;font-size:22px;">D</div>
+<div class="lt" style="left:433px;top:115px;color:000000;font-size:22px;">E</div>
+<div class="lt" style="left:469px;top:115px;color:000000;font-size:22px;">I</div>
+<div class="lt" style="left:505px;top:115px;color:000000;font-size:22px;">A</div>
+<div class="lt" style="left:1px;top:151px;color:000000;font-size:22px;"> </div>
+<div class="lt" style="left:37px;top:151px;color:000000;font-size:22px;"> </div>
+<div class="lt" style="left:73px;top:151px;color:000000;font-size:22px;"> </div>
+<div class="lt" style="left:109px;top:151px;color:000000;font-size:22px;"> </div>
+<div class="lt" style="left:145px;top:151px;color:000000;font-size:22px;">D</div>
+<div class="lt" style="left:181px;top:151px;color:000000;font-size:22px;">S</div>
+<div class="lt" style="left:217px;top:151px;color:000000;font-size:22px;">I</div>
+<div class="lt" style="left:253px;top:151px;color:000000;font-size:22px;">C</div>
+<div class="lt" style="left:289px;top:151px;color:000000;font-size:22px;"> </div>
+<div class="lt" style="left:325px;top:151px;color:000000;font-size:22px;">T</div>
+<div class="lt" style="left:361px;top:151px;color:000000;font-size:22px;">U</div>
+<div class="lt" style="left:397px;top:151px;color:000000;font-size:22px;">E</div>
+<div class="lt" style="left:433px;top:151px;color:000000;font-size:22px;">R</div>
+<div class="lt" style="left:469px;top:151px;color:000000;font-size:22px;">N</div>
+<div class="lt" style="left:505px;top:151px;color:000000;font-size:22px;">R</div>
+<div class="lt" style="left:1px;top:187px;color:000000;font-size:22px;">T</div>
+<div class="lt" style="left:37px;top:187px;color:000000;font-size:22px;">H</div>
+<div class="lt" style="left:73px;top:187px;color:000000;font-size:22px;">E</div>
+<div class="lt" style="left:109px;top:187px;color:000000;font-size:22px;">A</div>
+<div class="lt" style="left:145px;top:187px;color:000000;font-size:22px;">W</div>
+<div class="lt" style="left:181px;top:187px;color:000000;font-size:22px;">E</div>
+<div class="lt" style="left:217px;top:187px;color:000000;font-size:22px;">N</div>
+<div class="lt" style="left:253px;top:187px;color:000000;font-size:22px;">S</div>
+<div class="lt" style="left:289px;top:187px;color:000000;font-size:22px;">R</div>
+<div class="lt" style="left:325px;top:187px;color:000000;font-size:22px;">I</div>
+<div class="lt" style="left:361px;top:187px;color:000000;font-size:22px;">S</div>
+<div class="lt" style="left:397px;top:187px;color:000000;font-size:22px;"> </div>
+<div class="lt" style="left:433px;top:187px;color:000000;font-size:22px;"> </div>
+<div class="lt" style="left:469px;top:187px;color:000000;font-size:22px;"> </div>
+<div class="lt" style="left:505px;top:187px;color:000000;font-size:22px;"> </div>
+<div class="lt" style="left:1px;top:223px;color:000000;font-size:22px;">A</div>
+<div class="lt" style="left:37px;top:223px;color:000000;font-size:22px;">I</div>
+<div class="lt" style="left:73px;top:223px;color:000000;font-size:22px;">S</div>
+<div class="lt" style="left:109px;top:223px;color:000000;font-size:22px;">C</div>
+<div class="lt" style="left:145px;top:223px;color:000000;font-size:22px;">I</div>
+<div class="lt" style="left:181px;top:223px;color:000000;font-size:22px;"> </div>
+<div class="lt" style="left:217px;top:223px;color:000000;font-size:22px;">R</div>
+<div class="lt" style="left:253px;top:223px;color:000000;font-size:22px;">E</div>
+<div class="lt" style="left:289px;top:223px;color:000000;font-size:22px;">L</div>
+<div class="lt" style="left:325px;top:223px;color:000000;font-size:22px;">Y</div>
+<div class="lt" style="left:361px;top:223px;color:000000;font-size:22px;"> </div>
+<div class="lt" style="left:397px;top:223px;color:000000;font-size:22px;">M</div>
+<div class="lt" style="left:433px;top:223px;color:000000;font-size:22px;">D</div>
+<div class="lt" style="left:469px;top:223px;color:000000;font-size:22px;">A</div>
+<div class="lt" style="left:505px;top:223px;color:000000;font-size:22px;">E</div>
+<div class="lt" style="left:1px;top:259px;color:000000;font-size:22px;">E</div>
+<div class="lt" style="left:37px;top:259px;color:000000;font-size:22px;">T</div>
+<div class="lt" style="left:73px;top:259px;color:000000;font-size:22px;">A</div>
+<div class="lt" style="left:109px;top:259px;color:000000;font-size:22px;">R</div>
+<div class="lt" style="left:145px;top:259px;color:000000;font-size:22px;">H</div>
+<div class="lt" style="left:181px;top:259px;color:000000;font-size:22px;"> </div>
+<div class="lt" style="left:217px;top:259px;color:000000;font-size:22px;">S</div>
+<div class="lt" style="left:253px;top:259px;color:000000;font-size:22px;">H</div>
+<div class="lt" style="left:289px;top:259px;color:000000;font-size:22px;">E</div>
+<div class="lt" style="left:325px;top:259px;color:000000;font-size:22px;"> </div>
+<div class="lt" style="left:361px;top:259px;color:000000;font-size:22px;">T</div>
+<div class="lt" style="left:397px;top:259px;color:000000;font-size:22px;">L</div>
+<div class="lt" style="left:433px;top:259px;color:000000;font-size:22px;">I</div>
+<div class="lt" style="left:469px;top:259px;color:000000;font-size:22px;">T</div>
+<div class="lt" style="left:505px;top:259px;color:000000;font-size:22px;">E</div>
+<div class="lt" style="left:1px;top:295px;color:000000;font-size:22px;">M</div>
+<div class="lt" style="left:37px;top:295px;color:000000;font-size:22px;">S</div>
+<div class="lt" style="left:73px;top:295px;color:000000;font-size:22px;">E</div>
+<div class="lt" style="left:109px;top:295px;color:000000;font-size:22px;">H</div>
+<div class="lt" style="left:145px;top:295px;color:000000;font-size:22px;"> </div>
+<div class="lt" style="left:181px;top:295px;color:000000;font-size:22px;">D</div>
+<div class="lt" style="left:217px;top:295px;color:000000;font-size:22px;">E</div>
+<div class="lt" style="left:253px;top:295px;color:000000;font-size:22px;">I</div>
+<div class="lt" style="left:289px;top:295px;color:000000;font-size:22px;">T</div>
+<div class="lt" style="left:325px;top:295px;color:000000;font-size:22px;"> </div>
+<div class="lt" style="left:361px;top:295px;color:000000;font-size:22px;">G</div>
+<div class="lt" style="left:397px;top:295px;color:000000;font-size:22px;">A</div>
+<div class="lt" style="left:433px;top:295px;color:000000;font-size:22px;">R</div>
+<div class="lt" style="left:469px;top:295px;color:000000;font-size:22px;">U</div>
+<div class="lt" style="left:505px;top:295px;color:000000;font-size:22px;">D</div>
+<div class="lt" style="left:1px;top:331px;color:000000;font-size:22px;"> </div>
+<div class="lt" style="left:37px;top:331px;color:000000;font-size:22px;"> </div>
+<div class="lt" style="left:73px;top:331px;color:000000;font-size:22px;"> </div>
+<div class="lt" style="left:109px;top:331px;color:000000;font-size:22px;"> </div>
+<div class="lt" style="left:145px;top:331px;color:000000;font-size:22px;">I</div>
+<div class="lt" style="left:181px;top:331px;color:000000;font-size:22px;">P</div>
+<div class="lt" style="left:217px;top:331px;color:000000;font-size:22px;">S</div>
+<div class="lt" style="left:253px;top:331px;color:000000;font-size:22px;">N</div>
+<div class="lt" style="left:289px;top:331px;color:000000;font-size:22px;">I</div>
+<div class="lt" style="left:325px;top:331px;color:000000;font-size:22px;">R</div>
+<div class="lt" style="left:361px;top:331px;color:000000;font-size:22px;">A</div>
+<div class="lt" style="left:397px;top:331px;color:000000;font-size:22px;">I</div>
+<div class="lt" style="left:433px;top:331px;color:000000;font-size:22px;">T</div>
+<div class="lt" style="left:469px;top:331px;color:000000;font-size:22px;">O</div>
+<div class="lt" style="left:505px;top:331px;color:000000;font-size:22px;">N</div>
+<div class="lt" style="left:1px;top:367px;color:000000;font-size:22px;">B</div>
+<div class="lt" style="left:37px;top:367px;color:000000;font-size:22px;">O</div>
+<div class="lt" style="left:73px;top:367px;color:000000;font-size:22px;">M</div>
+<div class="lt" style="left:109px;top:367px;color:000000;font-size:22px;">E</div>
+<div class="lt" style="left:145px;top:367px;color:000000;font-size:22px;">C</div>
+<div class="lt" style="left:181px;top:367px;color:000000;font-size:22px;">E</div>
+<div class="lt" style="left:217px;top:367px;color:000000;font-size:22px;"> </div>
+<div class="lt" style="left:253px;top:367px;color:000000;font-size:22px;">E</div>
+<div class="lt" style="left:289px;top:367px;color:000000;font-size:22px;">E</div>
+<div class="lt" style="left:325px;top:367px;color:000000;font-size:22px;">V</div>
+<div class="lt" style="left:361px;top:367px;color:000000;font-size:22px;">N</div>
+<div class="lt" style="left:397px;top:367px;color:000000;font-size:22px;"> </div>
+<div class="lt" style="left:433px;top:367px;color:000000;font-size:22px;"> </div>
+<div class="lt" style="left:469px;top:367px;color:000000;font-size:22px;"> </div>
+<div class="lt" style="left:505px;top:367px;color:000000;font-size:22px;"> </div>
+<div class="lt" style="left:1px;top:403px;color:000000;font-size:22px;">E</div>
+<div class="lt" style="left:37px;top:403px;color:000000;font-size:22px;">E</div>
+<div class="lt" style="left:73px;top:403px;color:000000;font-size:22px;">D</div>
+<div class="lt" style="left:109px;top:403px;color:000000;font-size:22px;">X</div>
+<div class="lt" style="left:145px;top:403px;color:000000;font-size:22px;">N</div>
+<div class="lt" style="left:181px;top:403px;color:000000;font-size:22px;">T</div>
+<div class="lt" style="left:217px;top:403px;color:000000;font-size:22px;">S</div>
+<div class="lt" style="left:253px;top:403px;color:000000;font-size:22px;"> </div>
+<div class="lt" style="left:289px;top:403px;color:000000;font-size:22px;">F</div>
+<div class="lt" style="left:325px;top:403px;color:000000;font-size:22px;">E</div>
+<div class="lt" style="left:361px;top:403px;color:000000;font-size:22px;">I</div>
+<div class="lt" style="left:397px;top:403px;color:000000;font-size:22px;">S</div>
+<div class="lt" style="left:433px;top:403px;color:000000;font-size:22px;">N</div>
+<div class="lt" style="left:469px;top:403px;color:000000;font-size:22px;">T</div>
+<div class="lt" style="left:505px;top:403px;color:000000;font-size:22px;">S</div>
+<div class="lt" style="left:1px;top:439px;color:000000;font-size:22px;">A</div>
+<div class="lt" style="left:37px;top:439px;color:000000;font-size:22px;">W</div>
+<div class="lt" style="left:73px;top:439px;color:000000;font-size:22px;">E</div>
+<div class="lt" style="left:109px;top:439px;color:000000;font-size:22px;">M</div>
+<div class="lt" style="left:145px;top:439px;color:000000;font-size:22px;">O</div>
+<div class="lt" style="left:181px;top:439px;color:000000;font-size:22px;">S</div>
+<div class="lt" style="left:217px;top:439px;color:000000;font-size:22px;">E</div>
+<div class="lt" style="left:253px;top:439px;color:000000;font-size:22px;"> </div>
+<div class="lt" style="left:289px;top:439px;color:000000;font-size:22px;">C</div>
+<div class="lt" style="left:325px;top:439px;color:000000;font-size:22px;">E</div>
+<div class="lt" style="left:361px;top:439px;color:000000;font-size:22px;">R</div>
+<div class="lt" style="left:397px;top:439px;color:000000;font-size:22px;">M</div>
+<div class="lt" style="left:433px;top:439px;color:000000;font-size:22px;">A</div>
+<div class="lt" style="left:469px;top:439px;color:000000;font-size:22px;">O</div>
+<div class="lt" style="left:505px;top:439px;color:000000;font-size:22px;">N</div>
+<div class="lt" style="left:1px;top:475px;color:000000;font-size:22px;">R</div>
+<div class="lt" style="left:37px;top:475px;color:000000;font-size:22px;">N</div>
+<div class="lt" style="left:73px;top:475px;color:000000;font-size:22px;">O</div>
+<div class="lt" style="left:109px;top:475px;color:000000;font-size:22px;">A</div>
+<div class="lt" style="left:145px;top:475px;color:000000;font-size:22px;">M</div>
+<div class="lt" style="left:181px;top:475px;color:000000;font-size:22px;">I</div>
+<div class="lt" style="left:217px;top:475px;color:000000;font-size:22px;">A</div>
+<div class="lt" style="left:253px;top:475px;color:000000;font-size:22px;"> </div>
+<div class="lt" style="left:289px;top:475px;color:000000;font-size:22px;">O</div>
+<div class="lt" style="left:325px;top:475px;color:000000;font-size:22px;">I</div>
+<div class="lt" style="left:361px;top:475px;color:000000;font-size:22px;">L</div>
+<div class="lt" style="left:397px;top:475px;color:000000;font-size:22px;">T</div>
+<div class="lt" style="left:433px;top:475px;color:000000;font-size:22px;">N</div>
+<div class="lt" style="left:469px;top:475px;color:000000;font-size:22px;">U</div>
+<div class="lt" style="left:505px;top:475px;color:000000;font-size:22px;">E</div>
+<div class="lt" style="left:1px;top:511px;color:000000;font-size:22px;">D</div>
+<div class="lt" style="left:37px;top:511px;color:000000;font-size:22px;">R</div>
+<div class="lt" style="left:73px;top:511px;color:000000;font-size:22px;">S</div>
+<div class="lt" style="left:109px;top:511px;color:000000;font-size:22px;">S</div>
+<div class="lt" style="left:145px;top:511px;color:000000;font-size:22px;">E</div>
+<div class="lt" style="left:181px;top:511px;color:000000;font-size:22px;">E</div>
+<div class="lt" style="left:217px;top:511px;color:000000;font-size:22px;">S</div>
+<div class="lt" style="left:253px;top:511px;color:000000;font-size:22px;"> </div>
+<div class="lt" style="left:289px;top:511px;color:000000;font-size:22px;">N</div>
+<div class="lt" style="left:325px;top:511px;color:000000;font-size:22px;">W</div>
+<div class="lt" style="left:361px;top:511px;color:000000;font-size:22px;">E</div>
+<div class="lt" style="left:397px;top:511px;color:000000;font-size:22px;">P</div>
+<div class="lt" style="left:433px;top:511px;color:000000;font-size:22px;">O</div>
+<div class="lt" style="left:469px;top:511px;color:000000;font-size:22px;">R</div>
+<div class="lt" style="left:505px;top:511px;color:000000;font-size:22px;">T</div>
+<div class="hr" style="left:0px;top:0px;width:541px;"></div>
+<div class="hr" style="left:0px;top:36px;width:541px;"></div>
+<div class="hr" style="left:0px;top:72px;width:541px;"></div>
+<div class="hr" style="left:0px;top:108px;width:541px;"></div>
+<div class="hr" style="left:0px;top:144px;width:541px;"></div>
+<div class="hr" style="left:0px;top:180px;width:541px;"></div>
+<div class="hr" style="left:0px;top:216px;width:541px;"></div>
+<div class="hr" style="left:0px;top:252px;width:541px;"></div>
+<div class="hr" style="left:0px;top:288px;width:541px;"></div>
+<div class="hr" style="left:0px;top:324px;width:541px;"></div>
+<div class="hr" style="left:0px;top:360px;width:541px;"></div>
+<div class="hr" style="left:0px;top:396px;width:541px;"></div>
+<div class="hr" style="left:0px;top:432px;width:541px;"></div>
+<div class="hr" style="left:0px;top:468px;width:541px;"></div>
+<div class="hr" style="left:0px;top:504px;width:541px;"></div>
+<div class="hr" style="left:0px;top:540px;width:541px;"></div>
+<div class="vr" style="left:0px;top:0px;height:541px;"></div>
+<div class="vr" style="left:36px;top:0px;height:541px;"></div>
+<div class="vr" style="left:72px;top:0px;height:541px;"></div>
+<div class="vr" style="left:108px;top:0px;height:541px;"></div>
+<div class="vr" style="left:144px;top:0px;height:541px;"></div>
+<div class="vr" style="left:180px;top:0px;height:541px;"></div>
+<div class="vr" style="left:216px;top:0px;height:541px;"></div>
+<div class="vr" style="left:252px;top:0px;height:541px;"></div>
+<div class="vr" style="left:288px;top:0px;height:541px;"></div>
+<div class="vr" style="left:324px;top:0px;height:541px;"></div>
+<div class="vr" style="left:360px;top:0px;height:541px;"></div>
+<div class="vr" style="left:396px;top:0px;height:541px;"></div>
+<div class="vr" style="left:432px;top:0px;height:541px;"></div>
+<div class="vr" style="left:468px;top:0px;height:541px;"></div>
+<div class="vr" style="left:504px;top:0px;height:541px;"></div>
+<div class="vr" style="left:540px;top:0px;height:541px;"></div>
+</div></div></center>
+
+<center><table><tr>
+<td width="48%"><b>Across</b></td>
+<td>&nbsp;</td>
+<td width="48%"><b>Down</b></td>
+</tr><tr>
+<td valign=top><table>
+
+<tr><td width=0 align=right valign=top><b>1&nbsp;</b></td>
+<td valign=top>Most populated Scottish city - GLASGOW</td></tr>
+
+<tr><td width=0 align=right valign=top><b>8&nbsp;</b></td>
+<td valign=top>Fluttershy, for example - PEGASUS</td></tr>
+
+<tr><td width=0 align=right valign=top><b>15&nbsp;</b></td>
+<td valign=top>Alternatively - INSTEAD</td></tr>
+
+<tr><td width=0 align=right valign=top><b>16&nbsp;</b></td>
+<td valign=top>Wtih San, a Texas city - ANTONIO</td></tr>
+
+<tr><td width=0 align=right valign=top><b>17&nbsp;</b></td>
+<td valign=top>What could come after impeachment, but so far never has - REMOVAL</td></tr>
+
+<tr><td width=0 align=right valign=top><b>18&nbsp;</b></td>
+<td valign=top>University with an ornithology lab - CORNELL</td></tr>
+
+<tr><td width=0 align=right valign=top><b>19&nbsp;</b></td>
+<td valign=top>What farmers like Applejack make - PRODUCE</td></tr>
+
+<tr><td width=0 align=right valign=top><b>20&nbsp;</b></td>
+<td valign=top>Travel booking company - EXPEDIA</td></tr>
+
+<tr><td width=0 align=right valign=top><b>21&nbsp;</b></td>
+<td valign=top>Word with compact or jockey - DISC</td></tr>
+
+<tr><td width=0 align=right valign=top><b>23&nbsp;</b></td>
+<td valign=top>Timmy that shares a voice actor with Twilight - TURNER</td></tr>
+
+<tr><td width=0 align=right valign=top><b>24&nbsp;</b></td>
+<td valign=top>If you want to solve the puzzle... (part 1) (3 words)</td></tr>
+
+<tr><td width=0 align=right valign=top><b>29&nbsp;</b></td>
+<td valign=top>Text encoding used in some art - ASCII</td></tr>
+
+<tr><td width=0 align=right valign=top><b>30&nbsp;</b></td>
+<td valign=top>Count (on) - RELY</td></tr>
+
+<tr><td width=0 align=right valign=top><b>31&nbsp;</b></td>
+<td valign=top>First word on a clothing tag - MADE</td></tr>
+
+<tr><td width=0 align=right valign=top><b>35&nbsp;</b></td>
+<td valign=top>Third rock fprm the Sun - EARTH</td></tr>
+
+<tr><td width=0 align=right valign=top><b>36&nbsp;</b></td>
+<td valign=top>Female pronoun - SHE</td></tr>
+
+<tr><td width=0 align=right valign=top><b>37&nbsp;</b></td>
+<td valign=top>Princess, for example - TITLE</td></tr>
+
+<tr><td width=0 align=right valign=top><b>38&nbsp;</b></td>
+<td valign=top>Fit well - MESH</td></tr>
+
+<tr><td width=0 align=right valign=top><b>39&nbsp;</b></td>
+<td valign=top>It might involve reducing carbs - DIET</td></tr>
+
+<tr><td width=0 align=right valign=top><b>40&nbsp;</b></td>
+<td valign=top>Someone captained by Shining Armor - GUARD</td></tr>
+
+<tr><td width=0 align=right valign=top><b>41&nbsp;</b></td>
+<td valign=top>...you'll need this (part 2)</td></tr>
+
+<tr><td width=0 align=right valign=top><b>43&nbsp;</b></td>
+<td valign=top>_____ Ocean (John Luther Adams piece) - BECOME</td></tr>
+
+<tr><td width=0 align=right valign=top><b>47&nbsp;</b></td>
+<td valign=top>Square - EVEN</td></tr>
+
+<tr><td width=0 align=right valign=top><b>48&nbsp;</b></td>
+<td valign=top>Offers, as a hand - EXTENDS</td></tr>
+
+<tr><td width=0 align=right valign=top><b>50&nbsp;</b></td>
+<td valign=top>What's improved by exercise - FITNESS</td></tr>
+
+<tr><td width=0 align=right valign=top><b>55&nbsp;</b></td>
+<td valign=top>Cool, dazzling, or how Rainbow Dash would describe herself - AWESOME</td></tr>
+
+<tr><td width=0 align=right valign=top><b>56&nbsp;</b></td>
+<td valign=top>Leader who resigned after Brexit referendum - CAMERON</td></tr>
+
+<tr><td width=0 align=right valign=top><b>57&nbsp;</b></td>
+<td valign=top>Country with Dracula's Castle - ROMANIA</td></tr>
+
+<tr><td width=0 align=right valign=top><b>58&nbsp;</b></td>
+<td valign=top>Writer's sketch - OUTLINE</td></tr>
+
+<tr><td width=0 align=right valign=top><b>59&nbsp;</b></td>
+<td valign=top>Things Rarity makes - DRESSES</td></tr>
+
+<tr><td width=0 align=right valign=top><b>60&nbsp;</b></td>
+<td valign=top>Rhode Island city where Bob Dylan "went electric" - NEWPORT</td></tr>
+
+</table></td>
+<td>&nbsp;</td>
+<td valign=top><table>
+
+<tr><td width=0 align=right valign=top><b>1&nbsp;</b></td>
+<td valign=top>Hold - GRIP</td></tr>
+
+<tr><td width=0 align=right valign=top><b>2&nbsp;</b></td>
+<td valign=top>Take point - LEAD</td></tr>
+
+<tr><td width=0 align=right valign=top><b>3&nbsp;</b></td>
+<td valign=top>It's harmful, according to Dijkstra - GOTO</td></tr>
+
+<tr><td width=0 align=right valign=top><b>4&nbsp;</b></td>
+<td valign=top>Six deliveries, in cricket - OVER</td></tr>
+
+<tr><td width=0 align=right valign=top><b>5&nbsp;</b></td>
+<td valign=top>Food named for an earl - SANDWICH</td></tr>
+
+<tr><td width=0 align=right valign=top><b>6&nbsp;</b></td>
+<td valign=top>Judge a book by its cover, maybe - ASSUME</td></tr>
+
+<tr><td width=0 align=right valign=top><b>7&nbsp;</b></td>
+<td valign=top>The Everfree Forest, for example - WILDERNESS</td></tr>
+
+<tr><td width=0 align=right valign=top><b>8&nbsp;</b></td>
+<td valign=top>Walk back and forth - PACE</td></tr>
+
+<tr><td width=0 align=right valign=top><b>9&nbsp;</b></td>
+<td valign=top>Feeling experienced by those not at 26-Down - ANXIETY</td></tr>
+
+<tr><td width=0 align=right valign=top><b>10&nbsp;</b></td>
+<td valign=top>They can be cyclic, dihedral, alternating, or symmetric - GROUP</td></tr>
+
+<tr><td width=0 align=right valign=top><b>11&nbsp;</b></td>
+<td valign=top>Playground feature - SLIDE</td></tr>
+
+<tr><td width=0 align=right valign=top><b>12&nbsp;</b></td>
+<td valign=top>Response to a doorbell ring - ENTER</td></tr>
+
+<tr><td width=0 align=right valign=top><b>13&nbsp;</b></td>
+<td valign=top>Civil War faction - UNION</td></tr>
+
+<tr><td width=0 align=right valign=top><b>14&nbsp;</b></td>
+<td valign=top>Sunny? - SOLAR</td></tr>
+
+<tr><td width=0 align=right valign=top><b>22&nbsp;</b></td>
+<td valign=top>Popular takeout choice - CHINESE</td></tr>
+
+<tr><td width=0 align=right valign=top><b>24&nbsp;</b></td>
+<td valign=top>_____ spirit - TEAM</td></tr>
+
+<tr><td width=0 align=right valign=top><b>25&nbsp;</b></td>
+<td valign=top>Opposite of misses - HITS</td></tr>
+
+<tr><td width=0 align=right valign=top><b>26&nbsp;</b></td>
+<td valign=top>See 9-Down - EASE</td></tr>
+
+<tr><td width=0 align=right valign=top><b>27&nbsp;</b></td>
+<td valign=top>St. Louis landmark - ARCH</td></tr>
+
+<tr><td width=0 align=right valign=top><b>28&nbsp;</b></td>
+<td valign=top>It's seen in the Mirror Pool - REFLECTION</td></tr>
+
+<tr><td width=0 align=right valign=top><b>31&nbsp;</b></td>
+<td valign=top>French Sudan, once - MALI</td></tr>
+
+<tr><td width=0 align=right valign=top><b>32&nbsp;</b></td>
+<td valign=top>Gossip - DIRT</td></tr>
+
+<tr><td width=0 align=right valign=top><b>33&nbsp;</b></td>
+<td valign=top>Prefix wtih pilot or complete - AUTO</td></tr>
+
+<tr><td width=0 align=right valign=top><b>34&nbsp;</b></td>
+<td valign=top>Biblical garden - EDEN</td></tr>
+
+<tr><td width=0 align=right valign=top><b>37&nbsp;</b></td>
+<td valign=top>Two-dimensional simplex - TRIANGLE</td></tr>
+
+<tr><td width=0 align=right valign=top><b>39&nbsp;</b></td>
+<td valign=top>"Well Seymour, I made it, _____ your directions." - DESPITE</td></tr>
+
+<tr><td width=0 align=right valign=top><b>41&nbsp;</b></td>
+<td valign=top>Tax introduced by a constitutional amendment- INCOME</td></tr>
+
+<tr><td width=0 align=right valign=top><b>42&nbsp;</b></td>
+<td valign=top>Critic's evaluation - REVIEW</td></tr>
+
+<tr><td width=0 align=right valign=top><b>43&nbsp;</b></td>
+<td valign=top>Star Swirl's is notable - BEARD</td></tr>
+
+<tr><td width=0 align=right valign=top><b>44&nbsp;</b></td>
+<td valign=top>Steve Ballmer, for the Clippers - OWNER</td></tr>
+
+<tr><td width=0 align=right valign=top><b>45&nbsp;</b></td>
+<td valign=top>Aeolian and Dorian, in music - MODES</td></tr>
+
+<tr><td width=0 align=right valign=top><b>46&nbsp;</b></td>
+<td valign=top>They're often dreaded by students - TESTS</td></tr>
+
+<tr><td width=0 align=right valign=top><b>49&nbsp;</b></td>
+<td valign=top>An expert can sail all seven of them - SEAS</td></tr>
+
+<tr><td width=0 align=right valign=top><b>51&nbsp;</b></td>
+<td valign=top>Email protocol abbreviation - SMTP</td></tr>
+
+<tr><td width=0 align=right valign=top><b>52&nbsp;</b></td>
+<td valign=top>iPod mentioned in Friendship is Witchcraft - NANO</td></tr>
+
+<tr><td width=0 align=right valign=top><b>53&nbsp;</b></td>
+<td valign=top>Knight's _____ - TOUR</td></tr>
+
+<tr><td width=0 align=right valign=top><b>54&nbsp;</b></td>
+<td valign=top>Email folder - SENT</td></tr>
+
+</table></td>
+</tr>
+</table></center>
+
+    <p>
+    Upon filling out the grid, clues 24-Across and 41-Across are left over, and say "If you want to solve the puzzle, you'll need this."
+    Unscrambling the corresponding entries gives
+    "The answer is <strong>INSPIRATION</strong>".
+    </p>
+</div>
+
+ </div>
+  <div class="row puzzle content">
+    <div class='col-md-12 info'>
+        <h1 class="story">Authors Notes</h1>
+    </div>
+ </div>
+ <div class="col-md-10 col-md-offset-1">
+     
+<p>
+Derpy Hoeovs is aaoestcsid with mnay tighns: miffuns, mail dvrlieey, bneig araodlbe, and hnavig coerssd eyes. Atefr smoe bmosrnrtiaing, I landed on tihs idea. I don't sovle many cwordssros, so big tnkahs to Nhianst and Adrnsoen for hplneig darft cules and vnreyiifg they met csrsorowd sltye.
+</p>
+
+<p>
+The gird fill was done uinsg <a href="https://www.quinapalus.com/qxw.html">Qxw</a>, wtih a ctosum dotnicraiy mdae of all ptnuemirtaos of the 10000 most coommn words in the <a href="https://github.com/first20hours/google-10000-english">Glogoe n-grams</a> dastaet. A nice sdie-efecft of this pzlzue is that the flil is fblxiele eonguh to aviod most crosrowsd-ese wodrs.
+</p>
+
+<p>
+An oledr voesirn of the pzluze gave ltteer oedrr dtelircy, by mnkaig every N-letter wrod have an clue taht was N words lnog, wtih word oredr mtnciahg lteter oredr. Heeowvr, ligoc pilunzzg out the lretets was mroe fun, and rivomneg the cule lgenth rttrisoicen made it eesair to wrtie good csowsorrd cuels.
+</p>
+
+<p>
+By copemtle aineccdt, My Llttie Pnoy: Puzelzs are Magic oealpepvrd wtih the 2020 Saente ienecamhpmt trail for Dnolad Trump. We fuond it very, very fnuny taht if the Stnaee had voted to cncoivt Turmp, we wloud have been fcroed to iusse errata for 17-Asocrs.
+</p>
+
+<!-- Original text
+<p>Derpy Hooves is associated with many things: muffins, mail delivery,
+being adorable, and having crossed eyes. After some brainstorming, I
+landed on this idea. I don't solve many crosswords, so big thanks to
+Nishant and Anderson for helping draft clues and verifying they met
+crossword style.</p>
+
+<p>The grid fill was done using <a href="https://www.quinapalus.com/qxw.html">Qxw</a>, with
+a custom dictionary made of all permutations
+of the 10000 most common words in the <a href="https://github.com/first20hours/google-10000-english">Google n-grams</a>
+dataset. A nice side-effect of this puzzle is that the fill is flexible
+enough to avoid most crossword-ese words.</p>
+
+<p>An older version of the puzzle gave letter order directly, by making
+every N-letter word have an clue that was N words long, with word order matching
+letter order. However, logic
+puzzling out the letters was more fun, and removing the clue length
+restriction made it easier to write good crossword clues.</p>
+
+<p>By complete accident, My Little Pony: Puzzles are Magic overlapped with
+the 2020 Senate impeachment trial for Donald Trump. We found it very, very funny
+that if the Senate had voted to convict Trump, we would be forced to issue errata for
+17-Across.</p>
+-->
+
+ </div>
+</div>
+
+
+    
+    
+    
+  </body>
+</html>

@@ -1,0 +1,151 @@
+/* Custom font */
+@import url(https://db.onlinewebfonts.com/c/7a254c051bfbb6a604d602768b0d1cec?family=WoodrowW00-Reg);@import url(https://db.onlinewebfonts.com/c/7a254c051bfbb6a604d602768b0d1cec?family=WoodrowW00-Reg);@import url(https://db.onlinewebfonts.com/c/7a254c051bfbb6a604d602768b0d1cec?family=WoodrowW00-Reg);@import url(https://db.onlinewebfonts.com/c/7a254c051bfbb6a604d602768b0d1cec?family=WoodrowW00-Reg);@import url(https://db.onlinewebfonts.com/c/7a254c051bfbb6a604d602768b0d1cec?family=WoodrowW00-Reg);@import url(https://db.onlinewebfonts.com/c/7a254c051bfbb6a604d602768b0d1cec?family=WoodrowW00-Reg);@import url(https://db.onlinewebfonts.com/c/7a254c051bfbb6a604d602768b0d1cec?family=WoodrowW00-Reg);
+@font-face {font-family: "WoodrowW00-Reg"; src: url("https://db.onlinewebfonts.com/t/7a254c051bfbb6a604d602768b0d1cec.eot"); src: url("https://db.onlinewebfonts.com/t/7a254c051bfbb6a604d602768b0d1cec.eot?") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/7a254c051bfbb6a604d602768b0d1cec.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/7a254c051bfbb6a604d602768b0d1cec.woff") format("woff"), url("https://db.onlinewebfonts.com/t/7a254c051bfbb6a604d602768b0d1cec.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/7a254c051bfbb6a604d602768b0d1cec.svg") format("svg"); }
+
+/* Generic */
+* { font-family: Helvetica, Verdana, Arial, sans-serif; }
+
+body {
+    background: url(background1.jpg);
+    background-size: 2000px 2000px;
+}
+
+.container:not(.no_outline){
+    background: white;
+    padding: 20px 40px;
+    margin: 10px auto;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+
+#phlogo {
+    width: 50%;
+}
+
+
+/* Registration/forms */
+.title {
+    text-align: center;
+}
+
+h1.title {
+    font-size: 60px;
+    word-wrap: break-word;
+}
+
+h1.story {
+    font-family: "WoodrowW00-Reg", Helvetica, Verdana, Arial, sans-serif;
+    font-size: 60px;
+    text-align: center;
+}
+
+h2.story {
+    font-family: "WoodrowW00-Reg", Helvetica, Verdana, Arial, sans-serif;
+    font-size: 36px;
+    text-align: center;
+}
+
+.field_errors {
+    margin-bottom: 10px;
+}
+
+.helptext {
+    font-size: 10px;
+    color: gray;
+}
+
+input[type="text"] {
+    width:300px;
+}
+
+input[type="email"] {
+    width:300px;
+}
+
+input[readonly] {
+    background: #dddddd;
+    opacity: 0.8;
+}
+
+/* Change sizing from Bootstrap default */
+body {
+    font-size: 16px;
+}
+
+h4 {
+    font-size: 21px;
+}
+
+h3 {
+    font-size: 26px;
+}
+
+h2 {
+    font-size: 31px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+/* Hunt info */
+#qa h2 {
+    font-size: 26px;
+    border-top: 2px dashed #ccc;
+    padding-top: 10px;
+}
+
+/* Puzzle styling */
+.puzzle-box {
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    height: 100px;
+}
+
+/* navbar */
+.navbar-brand {
+    font-size: 20px;
+}
+
+/* force underline on some links */
+.underline {
+    text-decoration: underline;
+}
+
+/* Colors for feedback */
+.correct_color {
+    color: green;
+}
+
+.wrong_color {
+    color: red;
+}
+
+.medium_color {
+    color: goldenrod;
+}
+
+.errata {
+    color: red;
+}
+
+table.monospace td {
+    font-family: "Roboto Mono", monospace;
+}
+
+.monospace {
+    font-family: "Roboto Mono", monospace;
+}
+
+.hints {
+    background-color: #333;
+    user-select: none;
+}
+
+.visible {
+}
+
+.centered {
+    text-align: center;
+}

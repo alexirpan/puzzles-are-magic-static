@@ -1,0 +1,546 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="../../static/huntserver/favicon.ico" />
+    <title>Solution - The Key Is Going Slow And Steady</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    
+<!-- do this before CSS! -->
+<link href="https://db.onlinewebfonts.com/c/7a254c051bfbb6a604d602768b0d1cec?family=WoodrowW00-Reg" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" type="text/css" href="../../static/huntserver/info_base.css">
+<link rel="stylesheet" type="text/css" href="../../static/huntserver/navbar.css">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-66803017-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-66803017-2');
+</script>
+
+    <script src="../../static/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    
+<meta name="robots" content="noindex">
+<script src="../../static/jquery.min.js"></script>
+<script src="../../static/huntserver/puzzle.js"></script>
+<script>
+    window.MathJax = { MathML: { extensions: ["mml3.js", "content-mathml.js"]}};
+    window.MathJax.Hub.Config({
+        "HTML-CSS": { linebreaks: { automatic: true, width: "100% container" }},
+        "SVG": { linebreaks: { automatic: true, width: "100% container" }}
+    });
+</script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=MML_HTMLorMML"></script>
+<link rel="stylesheet" type="text/css" href="../../static/huntserver/puzzle.css">
+
+     
+     
+    <link rel="stylesheet" type="text/css" href="../../static/huntserver/base.css">
+    <!-- Done for compatability with the fixed navbar, move into base.css eventually -->
+  </head>
+  <body>
+
+    <nav class="navbar navbar-default navbar-fixed-top"  >
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../../index.html">  My Little Pony: Puzzles are Magic </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            
+    <li class=' visible-sm visible-xs'><a href="../../index.html"> Homepage </a></li>
+    <li class=''><a href="../../hunt/info/index.html"> FAQ </a></li>
+    <li class=''><a href="../../hunt/rules/index.html"> Rules </a></li>
+    <li class=''><a href="../../hunt/current.html"> Puzzles </a></li>
+    <li class=''><a href="../../hunt/teams/index.html"> Teams </a></li>
+    <li class=''><a href="../../updates/index.html"> Updates </a></li>
+    <li class=''><a href="../../wrapup.html"> Wrap-Up </a></li>
+    <li class=''><a href="../../resources/index.html"> Resources </a></li>
+
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            
+              
+            
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    
+    
+<div class="container">
+  <div class="row puzzle content">
+    <div class="col-md-12 info">
+        <h1 class="story">Solution - The Key Is Going Slow And Steady</h1>
+    </div>
+ </div>
+ <div class="col-md-10 col-md-offset-1">
+     <h4>
+         <em>
+         
+    By an Anonymous Contributor and Alex Irpan
+
+         </em>
+     </h4>
+     <hr>
+     
+<div>
+    <p>
+    Solvers are given a slide deck titled
+    "Fluttershy's Guide to Whether an Animal Makes a Good Pet", as well as the images
+    of 8 animals. Spoiler alert: according to Fluttershy, every animal makes
+    a good pet.
+    </p>
+
+    <p>
+    At this point, solvers who know My Little Pony should immediately
+    be reminded of the
+    <a href="https://www.youtube.com/watch?v=jBcqWRaJ4eQ">"Find a Pet"</a>
+    song from the Season 2 episode "May the Best Pet Win!". Solvers who
+    don't know MLP will have to figure out the connection from other context
+    clues: the given animals are screenshots from the song, the flavortext
+    "express my delight" and "the pet that will suit them just right"
+    is taken verbatim from the song, and the puzzle in general hints at
+    pets very strongly.
+    </p>
+
+    <p>
+    The slide deck itself is a
+    <a href="https://oregonstate.edu/trees/dichotomous_key.html">dichotomous key</a>,
+    which identifies species based on a series of Yes/No questions.
+    There are 26 endpoints in the dichotomous key, and treating
+    No as 0 and Yes as 1, the path to these leaves correspond to the binary
+    for numbers 1 to 26. Start by taking the 8 given animals and
+    sending them through the
+    key, converting the binary numbers to letters.
+    </p>
+
+    <p>
+        The exact animal name solvers should use is the name used in the lyrics
+        of "Find a Pet".
+        Alternate names that gives the same results are included in the table
+        as well.
+    </p>
+
+    <table class="table table-condensed">
+        <thead>
+            <th>Animal Name</th>
+            <th>Question 1</th>
+            <th>Question 2</th>
+            <th>Question 3</th>
+            <th>Question 4</th>
+            <th>Question 5</th>
+            <th>Binary</th>
+            <th>Letter</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Bunny / Hare / Rabbit</td>
+                <td>Every word in name starts with B (or H, or R). (Yes)</td>
+                <td>Not Accipitriformes (eagle), not Hymenoptera (bee, wasp, ant) (No)</td>
+                <td>Does not fly (No)</td>
+                <td>Doesn't live in water, is not an insect (No)</td>
+                <td>Has four toes, not five. (No)</td>
+                <td>10000</td>
+                <td>P</td>
+            </tr>
+
+            <tr>
+            <td>Squirrel / Flying Squirrel</td>
+            <td>Name starts with S (or F) (No)</td>
+            <td>Has a letter L (No)</td>
+            <td>Eats nuts and is not pink (Yes)</td>
+            <td>No cerci, not symbolic for USA (No)</td>
+            <td>In Rodentia order (Yes)</td>
+            <td>00101</td>
+            <td>E</td>
+            </tr>
+
+            <tr>
+                <td>Hummingbird</td>
+                <td>Name starts with H (Yes)</td>
+                <td>Not Accipitriformes (eagle), not Hymenoptera (bee, wasp, ant) (No)</td>
+                <td>Flies, is not an insect (Yes)</td>
+                <td>Cannot turn head 270 degrees in one direction (No)</td>
+                <td>Has kidneys (No)</td>
+                <td>10100</td>
+                <td>T</td>
+            </tr>
+
+            <tr>
+                <td>Monarch Butterfly</td>
+                <td>Words in name start with M, B, both fine (Yes)</td>
+                <td>Not Accipitriformes (eagle), not Hymenoptera (bee, wasp, ant) (No)</td>
+                <td>Flies, but is an insect (No)</td>
+                <td>Is an insect (Yes)</td>
+                <td>"Monarch" is reminiscent of royalty (Yes)</td>
+                <td>10011</td>
+                <td>S</td>
+            </tr>
+
+            <tr>
+                <td>Wasp</td>
+                <td>Name starts with W (No)</td>
+                <td>No Ls and no Ks (Yes)</td>
+                <td>Not Feliformia (cat-like carnivore) (Yes)</td>
+                <td>No bill (No)</td>
+                <td>Not reptile (No)</td>
+                <td>01100</td>
+                <td>L</td>
+            </tr>
+
+            <tr>
+            <td>Falcon / Peregrine Falcon</td>
+            <td>Name starts with F (or P) (No)</td>
+            <td>Has an L (No)</td>
+            <td>Has wings, is not pink (Yes)</td>
+            <td>No cerci, not symbolic for USA (No)</td>
+            <td>In Falconiformes order (Yes)</td>
+            <td>00101</td>
+            <td>E</td>
+            </tr>
+
+            <tr>
+            <td>Eagle / Bald Eagle</td>
+            <td>At least one word in name starts with E (No)</td>
+            <td>Has an L (No)</td>
+            <td>Has wings, is not pink (Yes)</td>
+            <td>No cerci, but is symbolic for USA (Yes)</td>
+            <td>Is diurnal (No)</td>
+            <td>00110</td>
+            <td>F</td>
+            </tr>
+
+            <tr>
+            <td>Bat</td>
+            <td>Name starts with B (Yes)</td>
+            <td>Not Accipitriformes (eagle), not Hymenoptera (bee, wasp, ant) (No)</td>
+            <td>Flies, is not an insect (Yes)</td>
+            <td>Cannot turn head 270 degrees in one direction (No)</td>
+            <td>Has kidneys (No)</td>
+            <td>10100</td>
+            <td>T</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>
+    The eight given animals give PETS LEFT, matching the first given boxes.
+    Many animals are featured in the episode "May the Best Pet Win!", but
+    for the puzzle, we specifically want the pets mentioned in "Find a Pet".
+    Going through the lyrics, there are 16 pets mentioned by name.
+    Eight were used to give the
+    PETS LEFT phrase, and these pets were given in the order they appear
+    in the lyrics. The other eight pets, in song order, are:
+    puddy tat (cat), otter, seal, ladybug, cricket, owl, toucan, and
+    flamingo.
+    </p>
+
+    <table class="table table-condensed">
+        <thead>
+            <th>Animal Name</th>
+            <th>Question 1</th>
+            <th>Question 2</th>
+            <th>Question 3</th>
+            <th>Question 4</th>
+            <th>Question 5</th>
+            <th>Binary</th>
+            <th>Letter</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Puddy Tat / Cat</td>
+                <td>Name starts with P or C (No)</td>
+                <td>No Ls, no Ks (Yes)</td>
+                <td>Is Feliformia (cat-like carnivore) (No)</td>
+                <td>Has two eyes (No)</td>
+                <td>Has a tail (Yes)</td>
+                <td>01001</td>
+                <td>I</td>
+            </tr><tr>
+                <td>Otter</td>
+                <td>Name starts with O (Yes)</td>
+                <td>Not Accipitriformes (eagle), not Hymenoptera (bee, wasp, ant) (No)</td>
+                <td>Does not fly (No)</td>
+                <td>Lives in water (Yes)</td>
+                <td>Name is not reminiscent of royalty (No)</td>
+                <td>10010</td>
+                <td>R</td>
+            </tr><tr>
+                <td>Seal</td>
+                <td>Name starts with S (No)</td>
+                <td>Has an L (No)</td>
+                <td>No wings, does not eat nuts (No)</td>
+                <td>Not Felidae (cats), not Testudines (turtles) (No)</td>
+                <td>Is adorable (Yes, don't get to choose here)</td>
+                <td>00001</td>
+                <td>A</td>
+            </tr><tr>
+                <td>Ladybug</td>
+                <td>Name starts with L (Yes)</td>
+                <td>Not Accipitriformes (eagle), not Hymenoptera (bee, wasp, ant) (No)</td>
+                <td>Flies, but is an insect (No)</td>
+                <td>Is an insect (Yes)</td>
+                <td>Name is not reminiscent of royalty (No)</td>
+                <td>10010</td>
+                <td>R</td>
+            </tr><tr>
+                <td>Cricket</td>
+                <td>Name starts with C (No)</td>
+                <td>Has a K (No)</td>
+                <td>Has wings, is not pink (Yes)</td>
+                <td>Has cerci (Yes)</td>
+                <td>Is nocturnal (Yes)</td>
+                <td>00111</td>
+                <td>G</td>
+            </tr><tr>
+                <td>Owl</td>
+                <td>Name starts with O (Yes)</td>
+                <td>Not Accipitriformes (eagle), not Hymenoptera (bee, wasp, ant) (No)</td>
+                <td>Flies, is not an insect (Yes)</td>
+                <td>Can turn its head 270 degrees in one direction (Yes)</td>
+                <td>Is a carnivore (No)</td>
+                <td>10110</td>
+                <td>V</td>
+            </tr><tr>
+                <td>Toucan</td>
+                <td>Name starts with T (No)</td>
+                <td>No Ls, no Ks (Yes)</td>
+                <td>Not Feliformia (cat-like carniove) (Yes)</td>
+                <td>Has a bill (Yes)</td>
+                <td>Does not live in the Arctic (No)</td>
+                <td>01110</td>
+                <td>N</td>
+            </tr><tr>
+                <td>Flamingo / Pink Flamingo</td>
+                <td>Name starts with F (or P) (No)</td>
+                <td>Has an L (No)</td>
+                <td>Has wings, but is pink (No)</td>
+                <td>Not Felidae (cats), not Testudines (turtles) (No)</td>
+                <td>Is adorable (Yes, don't get to choose here)</td>
+                <td>00001</td>
+                <td>A</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>
+    This gives IRARGVNA, which is garbage, but as indicated with the given boxes,
+    we still need to rotate (Caeser shift) by an appropriate number.
+    One notable pet that isn't mentioned in "Find a Pet", but which features
+    prominently in "May the Best Pet Win!", is Tank the tortoise, the pet
+    that ultimately wins Rainbow Dash's competition. Although Tank is sometimes
+    called a turtle, the script for "Find a Pet" is very adamant that he
+    is a tortoise. The puzzle title says "The Key is Going Slow and Steady",
+    so we should send "tortoise" through the key, to get the amount to shift
+    by.
+    </p>
+
+    <table class="table table-condensed">
+        <thead>
+            <th>Animal Name</th>
+            <th>Question 1</th>
+            <th>Question 2</th>
+            <th>Question 3</th>
+            <th>Question 4</th>
+            <th>Question 5</th>
+            <th>Binary</th>
+        </thead>
+        <tbody>
+            <tr>
+            <td>Tortoise</td>
+            <td>Name starts with T (No)</td>
+            <td>No Ls, No Ks (Yes)</td>
+            <td>Not Feliformia (cat-like carnivore) (Yes)</td>
+            <td>No bill (No)</td>
+            <td>Is a reptile (Yes)</td>
+            <td>01101</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>
+    Rotating the letters by 13 gives the final answer, <strong>VENETIAN</strong>.
+    Alternatively, you can just brute-force the 26 possible shifts.
+    </p>
+</div>
+
+ </div>
+  <div class="row puzzle content">
+    <div class='col-md-12 info'>
+        <h1 class="story">Authors Notes</h1>
+    </div>
+ </div>
+ <div class="col-md-10 col-md-offset-1">
+     
+<p>
+Alex: Most of the ideas for this puzzle came from the anonymous contributor.
+They didn't know any My Little Pony, and since we needed a Fluttershy puzzle,
+I suggested theming it after "Find a Pet", and it went from there.
+</p>
+
+<p>
+The letter-rotating step was primarily done to fit Tank into the puzzle,
+since he's the point of the entire episode. As a side
+benefit, it spread the animals over more of the alphabet, which made the
+dichotomous key easier to build. As much as possible, I wanted the
+Yes/No questions to be based on the animal, rather than their name,
+especially because the names were ambiguous before solvers figured out
+the "Find a Pet" connection. I wasn't able to do this all the way, but
+I'm happy I was able to bring it down to just 2 questions based on spelling
+instead of semantics.
+</p>
+
+<p>
+Unfortunately, one side effect was that TORTOISE was also an 8-letter phrase.
+During the hunt, many solvers wanted to treat TORTOISE as a Vigenere cipher
+key to shift each of the 8 leftover pets by a different value.
+We didn't catch this in testsolving because every testsolve group
+brute-forced all 26 shifts first, solving the final step immediately.
+Some solvers also interpreted "Rotate" as "anagram". The ciphertext of
+"IRARGVNA" is very close to an anagram of VIRGINIA, if you assume you have
+a few errors.
+</p>
+
+<p>
+Given a do-over, I would probably just remove Tank from the puzzle. It's
+unfortunate from an MLP perspective, but it makes the solve cleaner.
+</p>
+
+<p>
+With an 8 letter clue phrase, even a few errors could make the message
+unreadable, so we added the "not supposed to get here" labels
+to every letter that shouldn't be reached. Here are some examples that
+we designed the dichotomous key to catch.
+</p>
+
+<table class="table table-condensed">
+    <thead>
+        <th>Animal Name</th>
+        <th>Question 1</th>
+        <th>Question 2</th>
+        <th>Question 3</th>
+        <th>Question 4</th>
+        <th>Question 5</th>
+        <th>Binary</th>
+        <th>Letter</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Bee / Hornet (instead of Wasp)</td>
+            <td>Name starts with B (or H) (Yes)</td>
+            <td>Is Hymenoptera (bee, wasp, ant) (Yes)</td>
+            <td>Is not a rock (No)</td>
+            <td>Does not have a mane (No)</td>
+            <td>Not in Panthera genus (no)</td>
+            <td>11000</td>
+            <td>X - labeled bad.</td>
+        </tr>
+        <tr>
+            <td>Kitty (instead of Puddy Tat / Cat)</td>
+            <td>Name starts with K (No)</td>
+            <td>Has a K (No)</td>
+            <td>Does not have wings and does not eat nuts (No)</td>
+            <td>In Felidae (cat) family (Yes)</td>
+            <td>Does not live underground (No)</td>
+            <td>00010</td>
+            <td>B - labeled bad</td>
+        </tr><tr>
+            <td>Tank / Turtle (instead of Tortoise)</td>
+            <td>Name starts with T (No)</td>
+            <td>Has a K (or L) (No)</td>
+            <td>Does not have wings and does not eat nuts (No)</td>
+            <td>In Testudines (turtle) order (Yes)</td>
+            <td>Does not live underground (No/Yes, <a href="http://archive-srel.uga.edu/outreach/ecoviews/ecoview070311.htm">depending on species</a>)</td>
+            <td>00010 / 00011</td>
+            <td>B / C - both labeled bad</td>
+        </tr>
+    </tbody>
+</table>
+
+<p>Unfortunately, some names (like "yellowjacket") weren't caught by this,
+but the letters become distinctive once the song connection is found.
+</p>
+
+<p>
+I was concerned that telling solvers the letters used would enable a shortcut to the puzzle:
+check all letters that are used, build an appropriate regex of length 8, and
+see what words match. After some discussion with testsolvers, we
+decided the Caeser shifting made this too difficulty,
+or at least, hard enough that we were okay with solvers finishing
+the puzzle that way.
+</p>
+
+<p>(Incidentally, in the alternate universe where we didn't Caeser shift VENETIAN, a regex search for 8 letters all inside <span class="monospace">[PETSLEFTVENETIAN]</span> would find VENETIAN at the
+<a href="https://nutrimatic.org/?q=%5Bpetsleftvenetian%5D%5Bpetsleftvenetian%5D%5Bpetsleftvenetian%5D%5Bpetsleftvenetian%5D%5Bpetsleftvenetian%5D%5Bpetsleftvenetian%5D%5Bpetsleftvenetian%5D%5Bpetsleftvenetian%5D&go=Go">11th full word of nutrimatic results</a>, so our fears weren't entirely unfounded.)</p>
+
+<p>
+Factchecking the dichotomous key was pretty time consuming, and while doing so,
+we learned many fun facts about animals.
+</p>
+
+<ul>
+<li>Bunnies are not daytime creatures (diurnal), nor are they nighttime
+    creatures (nocturnal). They're twilight creatures (crepuscular).</li>
+<li>Ladybugs are not nocturnal, but the top Google search result incorrectly
+    describes them as nocturnal, due to using the wrong definition.</li>
+<li>Rabbits do not eat wood, but they do chew on wood pellets.</li>
+<li>Hummingbirds have been spotted digging through wood ashes, and may even
+eat wood ashes, as a source of calcium and other minerals.</li>
+<li>Otters are nocturnal.</li>
+<li>Crickets are nocturnal.</li>
+<li>Rabbits can swim, but don't like doing so.</li>
+<li>Bats can swim.</li>
+<li>Eagles and bunnies both have 4 toes.</li>
+<li>Bunnies cannot turn their head 270 degrees, but they can rotate their ears
+    270 degrees, and can rotate each ear independently.</li>
+<li>Owls are carnivores, hummingbirds are omnivores, and bats are either
+    omnivores or carnivores depending on the species.</li>
+<li>Hummingbirds and bats do, in fact, have kidneys.</li>
+</ul>
+
+<p>
+As for the errata, they were issued because:
+</p>
+
+<ul>
+<li>Thorax is a general term for the chest of an animal, and not an insect-specific term.</li>
+<li>We incorrectly assumed that only cats were scared of cucumbers. Turns out wasps are
+    repelled by freshly sliced cucumbers, due to the smell they emit, which is
+    undetectable by humans.</li>
+<li>Although owls are the only animal in the puzzle that can rotate their head
+    270 degrees in one direction, we realized the clue was a bit ambiguous,
+    because it could also be interpreted as rotating 135 degrees in either direction
+    for a total arc of 270 degrees.</li>
+</ul>
+
+<p>
+We hope you also learned fun facts about animals while solving this puzzle!
+</p>
+
+ </div>
+</div>
+
+
+    
+    
+    
+  </body>
+</html>

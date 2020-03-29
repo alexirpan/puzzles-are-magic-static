@@ -1,0 +1,196 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="../static/huntserver/favicon.ico" />
+    <title>Number Hunting</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    
+<!-- do this before CSS! -->
+<link href="https://db.onlinewebfonts.com/c/7a254c051bfbb6a604d602768b0d1cec?family=WoodrowW00-Reg" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" type="text/css" href="../static/huntserver/info_base.css">
+<link rel="stylesheet" type="text/css" href="../static/huntserver/navbar.css">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-66803017-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-66803017-2');
+</script>
+
+    <script src="../static/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    
+<script src="../static/jquery.min.js"></script>
+
+    <!-- add stuff that makes static answer checker work. -->
+    <script type="text/javascript">
+        puzzle_id = 'number-hunting';
+    </script>
+    <script src="../static/huntserver/static_checker.js"></script>
+
+<script>
+    window.MathJax = { MathML: { extensions: ["mml3.js", "content-mathml.js"]}};
+    window.MathJax.Hub.Config({
+        "HTML-CSS": { linebreaks: { automatic: true, width: "100% container" }},
+        "SVG": { linebreaks: { automatic: true, width: "100% container" }}
+    });
+</script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=MML_HTMLorMML"></script>
+<link rel="stylesheet" type="text/css" href="../static/huntserver/puzzle.css">
+
+     
+     
+    <link rel="stylesheet" type="text/css" href="../static/huntserver/base.css">
+    <!-- Done for compatability with the fixed navbar, move into base.css eventually -->
+  </head>
+  <body>
+
+    <nav class="navbar navbar-default navbar-fixed-top"  >
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html">  My Little Pony: Puzzles are Magic </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            
+    <li class=' visible-sm visible-xs'><a href="../index.html"> Homepage </a></li>
+    <li class=''><a href="../hunt/info/index.html"> FAQ </a></li>
+    <li class=''><a href="../hunt/rules/index.html"> Rules </a></li>
+    <li class=''><a href="../hunt/current.html"> Puzzles </a></li>
+    <li class=''><a href="../hunt/teams/index.html"> Teams </a></li>
+    <li class=''><a href="../updates/index.html"> Updates </a></li>
+    <li class=''><a href="../wrapup.html"> Wrap-Up </a></li>
+    <li class=''><a href="../resources/index.html"> Resources </a></li>
+
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            
+              
+            
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    
+    
+<div class="container">
+  <div class="row puzzle content">
+    <div class='col-md-12 info'>
+      <div class='leftinfo centered'>
+        <h1 class="story">Number Hunting</h1>
+      </div>
+      
+    </div>
+    
+          <h3 class="centered">
+              <a href="../solution/number-hunting/index.html">View Solution</a>
+          </h3>
+          <div class="centered">
+              <input id="answerinput" type="text">
+              <button id="answercheckbutton">Check Answer</button>
+              <br>
+              <span id="answerrepeat"></span><span id="answerreply"></span>
+          </div>
+          <h4 class="centered">
+              <a href="../stats/number-hunting.html">View Stats</a>
+          </h4>
+    
+
+    <div class="col-md-10 col-md-offset-1">
+        
+
+<div class="flavor">
+    <p>A brown filly wearing a propeller hat lets out a big groan. "Aw, I hate math homework!"</p>
+    <p>"WHAT," Twilight says. "Button Mash, Math homework is great!"</p>
+    <p>"No, it isn't. I could be playing games, I'm only a few ranks away from the final level of
+    Xena's Yellow Zeitgeist, but instead I have to find a bunch of stupid numbers."</p>
+</div>
+
+<div class="centered">
+    <p>What kind of numbers does Button Mash need to find?</p>
+    <p>Note: All Numbers appear at most once, except for one that appears twice. Not every Number is used.</p>
+    <p>If the equations are rendering poorly, click
+        <a href="../puzzle_resources/number-hunting/numberhunting.txt.html">here</a>
+        for a plaintext version.</p>
+</div>
+
+<p><math><mtext>Dinosaur made of magma (11) - Auric rodent (4 3)</mtext></math></p>
+<p><math><mtext>Bug which can open multiple locks (6 3 6) - Hypothetical device that surrounds a star and absorbs its energy (5 6)</mtext></math></p>
+<p><math><mtext>A billion times as ingenious (4-9) + Attention paid to the product of mass and acceleration (5 5)</mtext></math></p>
+<p><math><mtext>Personification of retribution (10 2 10) + Out of place Incan citadel robot (10 5 4)</mtext></math></p>
+<p><math><mtext>Proficient sword user (6 2 6) + Feline display dummy (9 3)</mtext></math></p>
+<p><math><mtext>German ruler of an ideal state (6 6) - Enormous celestial dragon which signals that all will be well (4 9 6 7 6)</mtext></math></p>
+<p><math><mtext>Ideal dragon (6 6) - Swindler who haunts dreams (9 5)</mtext></math></p>
+<p><math><mtext>Mock vassal of the lion (7 6 2 3) - Trick marionette made from character sequences (7 6 2 7)</mtext></math></p>
+<p><math><mtext>Initial gem (11) - Evil vice (10 3)</mtext></math></p>
+<p><math><mtext>Elizabeth II, if she ruled the Milky Way (6 5) - Justitia, below 273 Kelvin (6 4 7)</mtext></math></p>
+<p><math><mtext>Red follower who is a stealthy and well-protected fighter (7 6 5 5) x Ruler whose coat of arms depicts DNA (8 4 5-8)</mtext></math></p>
+<p><math><mtext>Starry-eyed dragon made of unknown space material (6-4 4 6 6) - Castle in Japanese chess (5 4)</mtext></math></p>
+<p><math><mtext>One who destroys two spotted cubes (4-1-4 7) - Epitome of illegal activity (10 2 5)</mtext></math></p>
+<p><math><mtext>Ocean predator made of steel rods (8 5) - Hyphenated name composed of a pair of cyclic anagrams (5-5)</mtext></math></p>
+<p><math><mtext>Gershwin composition, with sad color replaced by crazy state (8 2 7) - Octet of frightening bits (6-4)</mtext></math></p>
+<p><math><mtext>Quiet vessel commemorating Noah (6 5 3) - Nocturnal chess piece capable of moving in all 8 directions (5 2 3 5)</mtext></math></p>
+<p><math><mtext>Destroyer of lamp inhabitants (5 6) + Large visual organ (3 3)</mtext></math></p>
+<p><math><mtext>Enormous five-digit appendage (5 4) - Dragon appearing in Hobbes' 1651 book (9 6)</mtext></math></p>
+<p><math><mtext>One who uses spirits for their own ends (11 2 5) - Fortunate hand with cards of consecutive ranks (5 8)</mtext></math></p>
+<p><math><mtext>Latin dragon from non-coastal America (13) - Large, dark, seagoing vessel made from maize (9 2 4)</mtext></math></p>
+<p><math><mtext>Dragon made of desire and named after an arachnid and a toothy fish (4 5 6 6 5) + Andromeda cruise missile (6 8)</mtext></math></p>
+<p><math><mtext>Perfect society (6) + Eyeshade that's cheap and disposable (6 5)</mtext></math></p>
+<p><math><mtext>Dragon of lightning (7 5 6) - Top part of a coat of arms (8 5)</mtext></math></p>
+<p><math><mtext>Cryptic clue for abbreviation of Outer Banks (5 3) - Unstraightened chef (7 4)</mtext></math></p>
+<p><math><mtext>Call history (6 7) - Bright jumping chess piece (12)</mtext></math></p>
+<p><math><mtext>Starry-eyed dragon capable of traveling back in time (6-4 7 6) - Pride and Envy are two of these (3 5 4)</mtext></math></p>
+<p><math><mtext>Dragon that manages numbers (7 6) - Obtainer of French bread (4 6)</mtext></math></p>
+<p><math><mtext>Celebrity guardian angel (4 6 6) - Battleship with a name similar to its ship type (11 9)</mtext></math></p>
+<p><math><mtext>Powerful limb that ends fights (8 3 6 3) + Hungry and hairy spider (8 9)</mtext></math></p>
+<p><math><mtext>Water sound in a very deep hole (5 6) + Cold Spanish gentleman (9)</mtext></math></p>
+<p><math><mtext>Against a perfect society (10) - Crazy book saga, The alliterative very sleepy ungulate (8 3 8 5 5)</mtext></math></p>
+<p><math><msqrt><mtext>Song about luck (7 4) x Large German gun used against Stalingrad during WWII (16 4 6 5 4)</mtext></msqrt></math></mtext></math></p>
+<p><math><mtext>Costumed dance event (10) - Winged horse, while flying (3 7)</mtext></math></p>
+<p><math><mtext>Stellar ancient glove of a fighting Rocky Balboa (7' 5 4 6) - Tricky underling that crushes large creatures (7 6 5 7)</mtext></math></p>
+
+<p align="center">
+    <img src="../puzzle_resources/number-hunting/1.png.html">
+    <img src="../puzzle_resources/number-hunting/1.png.html">
+    <img src="../puzzle_resources/number-hunting/1.png.html">
+    <img src="../puzzle_resources/number-hunting/1.png.html">
+    <img src="../puzzle_resources/number-hunting/1.png.html">
+    <img src="../puzzle_resources/number-hunting/1.png.html">
+    <img src="../puzzle_resources/number-hunting/1.png.html">
+</p>
+
+
+        
+            <div>
+                <h2 class="story">Hints</h2>
+                <p class="centered">
+                    Hints are available <a href="../hints/number-hunting.html">here</a>.
+                </p>
+            </div>
+        
+    </div>
+  </div>
+</div>
+
+    
+    
+    
+  </body>
+</html>
