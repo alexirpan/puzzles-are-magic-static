@@ -1,7 +1,4 @@
 /* Custom font */
-/* @import url(https://db.onlinewebfonts.com/c/7a254c051bfbb6a604d602768b0d1cec?family=WoodrowW00-Reg);@import url(https://db.onlinewebfonts.com/c/7a254c051bfbb6a604d602768b0d1cec?family=WoodrowW00-Reg);@import url(https://db.onlinewebfonts.com/c/7a254c051bfbb6a604d602768b0d1cec?family=WoodrowW00-Reg);@import url(https://db.onlinewebfonts.com/c/7a254c051bfbb6a604d602768b0d1cec?family=WoodrowW00-Reg);@import url(https://db.onlinewebfonts.com/c/7a254c051bfbb6a604d602768b0d1cec?family=WoodrowW00-Reg);@import url(https://db.onlinewebfonts.com/c/7a254c051bfbb6a604d602768b0d1cec?family=WoodrowW00-Reg);@import url(https://db.onlinewebfonts.com/c/7a254c051bfbb6a604d602768b0d1cec?family=WoodrowW00-Reg);
-@font-face {font-family: "WoodrowW00-Reg"; src: url("https://db.onlinewebfonts.com/t/7a254c051bfbb6a604d602768b0d1cec.eot"); src: url("https://db.onlinewebfonts.com/t/7a254c051bfbb6a604d602768b0d1cec.eot?") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/7a254c051bfbb6a604d602768b0d1cec.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/7a254c051bfbb6a604d602768b0d1cec.woff") format("woff"), url("https://db.onlinewebfonts.com/t/7a254c051bfbb6a604d602768b0d1cec.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/7a254c051bfbb6a604d602768b0d1cec.svg") format("svg"); } */
-
 @font-face {
     font-family: "WoodrowW00-Reg";
     src: url(../WoodrowW00-Reg.ttf);
